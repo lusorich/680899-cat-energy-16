@@ -16,23 +16,23 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
-              <a>Главная</a>
+            <li>
+              <a class="main-nav__item main-nav__item--active">Главная</a>
             </li>
-            <li class="main-nav__item">
-              <a href="catalog.html">Каталог продукции</a>
+            <li>
+              <a class="main-nav__item" href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="main-nav__item">
-              <a href="form.html">Подбор программы</a>
+            <li>
+              <a class="main-nav__item" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <main class="page-main">
-      <h1 class="page-main__title">Функциональное питание для котов</h1>
-      <p class="page-main__slogan">Занялся собой? Займись котом!</p>
-      <a class="button button-link--green" href="#">Подобрать программу</a>
+    <main class="page">
+      <h1 class="page__title">Функциональное питание для котов</h1>
+      <p class="page__slogan">Занялся собой? Займись котом!</p>
+      <a class="button button--link-green" href="#">Подобрать программу</a>
       <section class="problem">
         <h2 class="visually-hidden">Цель, с которой вам поможет корм "Cat energy"</h2>
         <ul class="problem__list">
@@ -40,11 +40,7 @@
             <article class="problem-card">
               <h1 class="problem-card__title">Похудение</h1>
               <p class="problem-card__desc">
-                Ваш кот весит больше собаки и
-                почти утратил способность лазить
-                по деревьям? Пора на диету! Cat
-                Energy Slim поможет вашему
-                питомцу сбросить лишний вес.
+                Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
               </p>
               <a class="problem-card__link" href="#">Каталог Slim</a>
             </article>
@@ -53,11 +49,7 @@
             <article class="problem-card">
               <h1 class="problem-card__title">Набор массы</h1>
               <p class="problem-card__desc">
-                Заработать авторитет среди
-                дворовых котов и даже собак?
-                Серия Cat Energy Pro поможет
-                вашему коту нарастить
-                необходимые мыщцы!
+                Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мыщцы!
               </p>
               <a class="problem-card__link" href="#">Каталог Pro</a>
             </article>
@@ -70,30 +62,22 @@
         <ul class="advantage__list">
           <li class="advantage__item">
             <p class="advantage__desc">
-              Функциональное питание
-              содержит только полезные
-              питательные вещества.
+              Функциональное питание содержит только полезные питательные вещества.
             </p>
           </li>
           <li class="advantage__item">
             <p class="advantage__desc">
-              Выпускается в виде порошка,
-              который нужно лишь залить
-              кипятком и готово.
+              Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
             </p>
           </li>
           <li class="advantage__item">
             <p class="advantage__desc">
-              Замените один-два приема
-              обычной еды на наше
-              функциональное питание.
+              Замените один-два приема обычной еды на наше функциональное питание.
             </p>
           </li>
           <li class="advantage__item">
             <p class="advantage__desc">
-              Уже через месяц
-              наслаждайтесь изменениями
-              к лучшему вашего питамца!
+              Уже через месяц наслаждайтесь изменениями к лучшему вашего питамца!
             </p>
           </li>
         </ul>
@@ -102,12 +86,7 @@
         <h2 class="visually-hidden">Результат от питания кормом "Cat energy"</h2>
         <p class="example__title">Живой пример</p>
         <p class="example__desc">
-          Борис сбросил 5 кг за 2 месяца, просто
-          заменив свой обычный корм на Cat
-          Energy Slim. Отличный результат без
-          изнуряющих тренировок! При этом он не
-          менял своих привычек и по-прежнему
-          спит по 16 часов в день.
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
         <!-- 5 кг и 60 дней на потом !-->
         <p class="example__cost">Затраты на питание: 15 000 руб.</p>
@@ -117,16 +96,12 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="contacts page-footer__contacts">
-        <p>
-          Приглашаем
-          к сотрудничеству
-          дилеров!
+      <div class="page-footer__contacts contacts">
+        <p class="contacts__desc">
+          Приглашаем к сотрудничеству дилеров!
         </p>
-        <p>
-          ул. Большая
-          Конюшенная, д. 19/8
-          Санкт-Петербург
+        <p class="contacts__text">
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
         </p>
         <iframe src="#" frameborder="0"></iframe>
       </div>
@@ -137,7 +112,6 @@
         <li class="social__item">
           <a class="social__link social__link--vkontakte">
           <span class="visually-hidden">Мы в Вконтакте</span>
-          >
           </a>
         </li>
         <li class="social__item">
