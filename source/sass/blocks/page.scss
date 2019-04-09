@@ -1,7 +1,6 @@
 .page__title {
   @include oswaldReg;
-  @include fontStyle(36px,36px);
-  color: $white;
+  @include fontStyle(36px,36px,$white);
 }
 .page__slogan {
   font-size:14px;
@@ -11,7 +10,7 @@
 
 .page__title--form-title {
   line-height: 60px;
-  color: $black;
+  color: #111111;
 }
 
 .page__desc {
