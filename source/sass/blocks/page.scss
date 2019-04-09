@@ -1,10 +1,21 @@
 .page__title {
-  @include fontStyle(36px,36px);
   @include oswaldReg;
+  @include fontStyle(36px,36px);
   color: $white;
 }
 .page__slogan {
   font-size:14px;
   line-height: 14px;
-  color: $white;
+  color: #111111;
+}
+
+.page__title--form-title {
+  line-height: 60px;
+  color: $black;
+}
+
+.page__desc {
+  @include oswaldReg;
+  @include fontStyle(14px,18px);
+  color: #111111;
 }
