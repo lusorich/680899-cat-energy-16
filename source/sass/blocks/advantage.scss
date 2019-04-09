@@ -1,0 +1,8 @@
+.advantage__title {
+  @include oswaldReg;
+  @include fontStyle(36px,60px);
+}
+
+.advantage__list {
+  @include ulStyle;
+}

@@ -1,0 +1,8 @@
+.contacts__desc {
+  @include oswaldReg;
+  @include fontStyle(16px,20px);
+}
+
+.contacts__text {
+  line-height: 20px;
+}

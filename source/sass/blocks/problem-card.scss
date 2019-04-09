@@ -1,0 +1,15 @@
+.problem-card {
+  background-color: $grey;
+}
+
+.problem-card__title {
+  @include oswaldReg;
+  @include fontStyle(24px,36px);
+  text-transform: uppercase;
+}
+
+.problem-card__link {
+  @include oswaldReg;
+  @include fontStyle(16px,16px);
+  text-transform: uppercase;
+}

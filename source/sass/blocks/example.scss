@@ -1,0 +1,4 @@
+.example__title {
+  @include oswaldMed;
+  @include fontStyle(36px,60px);
+}

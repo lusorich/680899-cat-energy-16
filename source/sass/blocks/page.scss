@@ -1,0 +1,10 @@
+.page__title {
+  @include fontStyle(36px,36px);
+  @include oswaldReg;
+  color: $white;
+}
+.page__slogan {
+  font-size:14px;
+  line-height: 14px;
+  color: $white;
+}
