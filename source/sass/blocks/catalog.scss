@@ -1,0 +1,19 @@
+.catalog__title {
+  @include oswaldReg;
+  @include fontStyle(36px,60px);
+}
+
+.catalog__list {
+  @include ulStyle;
+}
+
+.catalog__more-title {
+  @include oswaldReg;
+  @include fontStyle(16px,20px);
+}
+
+.catalog__more-text {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400px;
+}

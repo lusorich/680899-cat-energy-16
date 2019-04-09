@@ -1,0 +1,12 @@
+.extra-product-card__title {
+  @include oswaldReg;
+  @include fontStyle(16px,16px);
+}
+
+.extra-product-card__field {
+  line-height: 14px;
+}
+
+.extra-product-card__value {
+  line-height: 14px;
+}
