@@ -1,0 +1,33 @@
+.button {
+  @include oswaldReg;
+  @include fontStyle(16px,20px);
+  display: block;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+  padding-top: 12px;
+  padding-bottom: 10px;
+}
+
+.button--link-green {
+  background-color: #68b738;
+}
+
+.button--link-grey {
+  color: #444444;
+  background-color: $grey;
+}
+
+.button__wrapper {
+  display: block;
+}
+
+.button--submit {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 280px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+}
+

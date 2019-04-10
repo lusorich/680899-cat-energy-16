@@ -1,0 +1,6 @@
+.main-nav__list {
+  @include ulStyle;
+  @include fontStyle(20px,20px);
+  @include oswaldMed;
+  text-transform: uppercase;
+}

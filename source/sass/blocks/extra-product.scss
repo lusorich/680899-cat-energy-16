@@ -1,0 +1,9 @@
+.extra-product__title {
+  @include oswaldReg;
+  @include fontStyle(24px,24px);
+  @include ulStyle;
+}
+
+.extra-product__list {
+  @include ulStyle;
+}
