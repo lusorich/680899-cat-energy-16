@@ -1,3 +1,9 @@
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 .form__title {
   @include oswaldReg;
   @include fontStyle(24px,24px);
@@ -8,6 +14,10 @@
   @include oswaldReg;
   @include fontStyle(16px,18px);
   color: #222222;
+}
+
+.form__list {
+  @include ulStyle;
 }
 
 .form__required {
