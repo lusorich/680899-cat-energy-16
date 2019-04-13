@@ -3,4 +3,24 @@
   @include fontStyle(20px,20px);
   @include oswaldMed;
   text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 45px;
+  }
+}
+
+.main-nav__item {
+  display: block;
+  color: #111111;
+  padding: 22px 0 22px;
+  border-top: 1px solid #e6e6e6;
+  @media (min-width: $tablet-width) {
+    border: 0;
+    padding: 0;
+    color: #222222;
+  }
 }
