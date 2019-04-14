@@ -1,8 +1,29 @@
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contacts__wrapper {
+  display: flex;
+}
+
 .contacts__desc {
   @include oswaldReg;
   @include fontStyle(16px,20px);
+  @include mp;
+  min-width: 140px;
+  color: #111111;
+  @media(min-width: $tablet-width) {
+    @include fontStyle(20px,25px);
+  }
 }
 
 .contacts__text {
+  @include mp;
+  min-width: 140px;
+  color: #444444;
   line-height: 20px;
+  @media(min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }

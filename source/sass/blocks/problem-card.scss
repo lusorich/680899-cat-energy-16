@@ -1,15 +1,40 @@
 .problem-card {
+  @include mp(0,0 20px)
   background-color: $grey;
+  @media(min-width: $tablet-width) {
+    @include mp(0,0 0 0 52px)
+  }
 }
 
 .problem-card__title {
   @include oswaldReg;
   @include fontStyle(24px,36px);
+  @include mp(0,35px 0 0 91px);
+  color: #111111;
   text-transform: uppercase;
+  @media(min-width: $tablet-width) {
+    @include mp(0,78px 0 0 0);
+  }
+}
+
+.problem-card__desc {
+  @include mp(0, 25px 0 20px 0);
+  color: #444444;
+  border-bottom: 1px solid #d9d9d9;
+  @media(min-width: $desktop-width) {
+    @include fontStyle(16px,24px);
+  }
+
 }
 
 .problem-card__link {
   @include oswaldReg;
   @include fontStyle(16px,16px);
+  @include mp(0,20px 0);
+  display: block;
   text-transform: uppercase;
+  color: #111111;
+  @media(min-width: $tablet-width) {
+    @include fontStyle(20px,20px);
+  }
 }

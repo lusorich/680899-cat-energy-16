@@ -1,8 +1,27 @@
+.advantage__list {
+  @include ulStyle;
+}
+
+.advantage__item {
+  @include mp(20px 0 0 0,0 0 0 80px);
+  &:nth-child(1) {
+    margin-top: 0;
+  }
+}
+
 .advantage__title {
   @include oswaldReg;
   @include fontStyle(36px,60px);
+  color: #111111;
+  @media(min-width: $tablet-width) {
+    @include fontStyle(60px,60px);
+  }
 }
 
-.advantage__list {
-  @include ulStyle;
+.advantage__desc {
+  @include mp;
+  color: #444444;
+  @media(min-width: $tablet-width) {
+    @include fontStyle(16px,24px);
+  }
 }

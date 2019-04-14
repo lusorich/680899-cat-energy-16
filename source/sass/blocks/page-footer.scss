@@ -1,0 +1,18 @@
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: $grey;
+  @media(min-width: $tablet-width){
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__logo-title {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  //временно
+  min-height: 95px;
+
+}
