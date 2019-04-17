@@ -1,19 +1,57 @@
 .catalog__title {
   @include oswaldReg;
   @include fontStyle(36px,60px);
+  @media(min-width: $tablet-width) {
+    font-size: 60px;
+  }
+
 }
 
 .catalog__list {
   @include ulStyle;
+  display: flex;
+  flex-direction: column;
+  @media(min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+}
+
+.catalog__item {
+  @media(min-width: $tablet-width) {
+    margin-top: 140px;
+  }
+}
+
+.catalog__item-wrapper {
+  width: 280px;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  @media(min-width: $tablet-width) {
+    width: 324px;
+    height: 430px;
+  }
 }
 
 .catalog__more-title {
   @include oswaldReg;
   @include fontStyle(16px,20px);
+  text-transform: uppercase;
+  color: #111111;
+  @media(min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .catalog__more-text {
+  color: #444444;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400px;
+  @media(min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }
