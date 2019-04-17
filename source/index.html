@@ -8,12 +8,15 @@
   <body>
     <div class="container">
       <header class="page-header">
-        <a class="page-header__logo" href="#">
-          <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="Логотип Cat energy">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <div class="main-nav__wrapper">
+        <nav class="main-nav main-nav--closed">
+        <div class="main-nav__wrapper">
+          <a class="page-header__logo" href="#">
+            <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="Логотип Cat energy" width="190px" height="40px">
+          </a>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        </div>
             <ul class="main-nav__list">
               <li>
                 <a class="main-nav__item main-nav__item--active">Главная</a>
@@ -25,7 +28,6 @@
                 <a class="main-nav__item" href="form.html">Подбор программы</a>
               </li>
             </ul>
-          </div>
         </nav>
       </header>
       <main class="page">
@@ -140,4 +142,5 @@
       </footer>
     </div>
   </body>
+  <script src="js/script.js"></script>
 </html>
