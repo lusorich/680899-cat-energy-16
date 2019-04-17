@@ -8,15 +8,15 @@
   <body>
     <div class="container">
       <header class="page-header">
-        <a class="page-header__logo" href="#">
-          <img class="page-header__logo-img" src="#" alt="Логотип Cat energy">
-        </a>
-        <a class="page-header__logo-title" href="#">
-          <img class="page-header__logo-title-img" src="#" alt="Cat energy">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <div class="main-nav__wrapper">
+        <nav class="main-nav main-nav--closed">
+        <div class="main-nav__wrapper">
+          <a class="page-header__logo" href="#">
+            <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="Логотип Cat energy" width="190px" height="40px">
+          </a>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        </div>
             <ul class="main-nav__list">
               <li>
                 <a class="main-nav__item" href="index.html">Главная</a>
@@ -28,7 +28,6 @@
                 <a class="main-nav__item main-nav__item--active">Подбор программы</a>
               </li>
             </ul>
-          </div>
         </nav>
       </header>
       <main class="page">
@@ -97,41 +96,49 @@
           <p class="form__required">*- Обязательные поля</p>
         </form>
       </main>
-      <footer class="page-footer">
+            <footer class="page-footer">
         <div class="page-footer__contacts contacts">
-          <p class="contacts__desc">
-            Приглашаем к сотрудничеству дилеров!
-          </p>
-          <p class="contacts__text">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </p>
+          <div class="contacts__wrapper">
+            <p class="contacts__desc">
+              Приглашаем к сотрудничеству дилеров!
+            </p>
+            <p class="contacts__text">
+              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            </p>
+          </div>
           <iframe src="#" frameborder="0"></iframe>
         </div>
-        <a class="page-footer__logo-title" href="#">
-          <img class="page-footer__logo-title-img" src="#" alt="Cat energy">
-        </a>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte">
-              <span class="visually-hidden">Мы в Вконтакте</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram">
-              <span class="visually-hidden"> Мы в Инстаграме </span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook">
-              <span class="visually-hidden">Мы в Фейсбуке </span>
-            </a>
-          </li>
-        </ul>
-        <div class="copyright">
-          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy </a>
-          <svg></svg>
+        <div class="page-footer__wrapper">
+          <a class="page-footer__logo-title" href="#">
+            <img class="page-footer__logo-title-img" src="img/logo-footer.svg" alt="Cat energy" width="128px" height="24px">
+          </a>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte">
+                <span class="visually-hidden">Мы в Вконтакте</span>
+                <img width="20px" height="20px" src="img/icon-vk-mobile.svg">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram">
+                <span class="visually-hidden"> Мы в Инстаграме </span>
+                <img width="20px" height="20px" src="img/icon-insta-mobile.svg">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook">
+                <span class="visually-hidden">Мы в Фейсбуке </span>
+                <img width="20px" height="20px" src="img/icon-fb-mobile.svg">
+              </a>
+            </li>
+          </ul>
+          <div class="copyright">
+            <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy </a>
+            <img width="27px" height="34px" src="img/htmlacademy.svg" alt="Лого HTML Academy">
+          </div>
         </div>
       </footer>
     </div>
   </body>
+  <script src="js/script.js"></script>
 </html>
