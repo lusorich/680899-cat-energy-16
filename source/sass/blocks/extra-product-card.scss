@@ -1,6 +1,13 @@
+.extra-product-card {
+  @media(min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
 .extra-product-card__title {
   @include oswaldReg;
   @include fontStyle(16px,16px);
+  @include mp;
 }
 
 .extra-product-card__field {
@@ -9,4 +16,18 @@
 
 .extra-product-card__value {
   line-height: 14px;
+}
+
+.extra-product-card__wrapper {
+  @media(min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.extra-product-card__wrapper--button {
+  @media(min-width: $desktop-width) {
+    //исправить, нормально подумать проценты от родительского
+    width: 30%;
+  }
 }

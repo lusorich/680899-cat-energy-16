@@ -1,9 +1,20 @@
-.extra-product__title {
-  @include oswaldReg;
-  @include fontStyle(24px,24px);
+.extra-product__list {
   @include ulStyle;
 }
 
-.extra-product__list {
+.extra-product__item {
+  width: 100%;
+  box-sizing: border-box;
+  @media(min-width: $tablet-width) {
+    @include mp(0,0 37px 0 38px);
+  }
+  @media(min-width: $desktop-width) {
+    //примерно, переделать
+    width: 65%;
+  }
+}
+.extra-product__title {
+  @include oswaldReg;
+  @include fontStyle(24px,24px);
   @include ulStyle;
 }
