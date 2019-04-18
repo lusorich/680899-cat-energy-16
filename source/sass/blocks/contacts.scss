@@ -5,6 +5,13 @@
 
 .contacts__wrapper {
   display: flex;
+  @media(min-width: $desktop-width) {
+    position: absolute;
+    width: 39%;
+    margin-left: 110px;
+    margin-top: 100px;
+    background-color: $white;
+  }
 }
 
 .contacts__desc {
@@ -13,17 +20,27 @@
   @include mp;
   min-width: 140px;
   color: #111111;
+  box-sizing: border-box;
   @media(min-width: $tablet-width) {
     @include fontStyle(20px,25px);
+  }
+  @media(min-width: $desktop-width) {
+    @include mp(0,66px 40px 66px 76px);
+    width: 50%;
   }
 }
 
 .contacts__text {
   @include mp;
+  box-sizing: border-box;
   min-width: 140px;
   color: #444444;
   line-height: 20px;
   @media(min-width: $tablet-width) {
     font-size: 16px;
+  }
+  @media(min-width: $desktop-width) {
+    @include mp(0,65px 75px 55px 40px);
+    width: 50%;
   }
 }
