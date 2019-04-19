@@ -21,3 +21,9 @@
   @include fontStyle(14px,18px);
   color: #111111;
 }
+
+.page__wrapper--button {
+  @media(min-width: $tablet-width) {
+    width: 245px;
+  }
+}
