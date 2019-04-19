@@ -1,5 +1,14 @@
+.extra-product__wrapper {
+  @media(min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
 .extra-product__list {
   @include ulStyle;
+  @media(min-width: $desktop-width) {
+    width: 75%;
+  }
 }
 
 .extra-product__item {
@@ -7,10 +16,6 @@
   box-sizing: border-box;
   @media(min-width: $tablet-width) {
     @include mp(0,0 37px 0 38px);
-  }
-  @media(min-width: $desktop-width) {
-    //примерно, переделать
-    width: 65%;
   }
 }
 
