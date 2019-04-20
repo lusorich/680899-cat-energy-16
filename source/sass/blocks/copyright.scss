@@ -8,6 +8,7 @@
 
 .copyright__link {
   @include fontStyle(16px,16px);
-  @include mp(0,0);
+  margin: 0;
+  padding: 0;
   color: #444444;
 }

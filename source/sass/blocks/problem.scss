@@ -2,19 +2,22 @@
   @include ulStyle;
   display: flex;
   flex-direction: column;
-  @media(min-width: $desktop-width){
+
+  @media (min-width: $desktop-width) {
     flex-direction: row;
   }
 }
 
 .problem__item {
   box-sizing: border-box;
-  @include mp(22px 0 0 0,0);
-  @media(min-width:$desktop-width) {
+  margin-right: 22px;
+
+  @media (min-width: $desktop-width) {
     //не точный размер
     width: 55%;
-     &:nth-child(1) {
-      margin-right:80px;
+
+    &:nth-child(1) {
+      margin-right: 80px;
     }
   }
 }

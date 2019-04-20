@@ -5,14 +5,16 @@
 .example__title {
   @include oswaldMed;
   @include fontStyle(36px,60px);
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     font-size: 60px;
   }
 }
 
 .example__desc {
   color: #444444;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     @include fontStyle(16px, 24px);
   }
 }
@@ -21,7 +23,8 @@
   @include oswaldReg;
   @include fontStyle(14px,20px);
   color: #111111;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     @include fontStyle(20px,20px);
   }
 }
@@ -31,7 +34,8 @@
   @include fontStyle(16px, 20px);
   text-transform: uppercase;
   color: #111111;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     line-height: 20px;
   }
 }
