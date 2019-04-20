@@ -9,7 +9,7 @@
 
 .problem-card__title {
   @include oswaldReg;
-  @include fontStyle(24px,36px);
+  @include fontStyle(24px);
   padding: 35px 0 0 91px;
   color: #111111;
   text-transform: uppercase;
