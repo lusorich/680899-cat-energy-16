@@ -4,17 +4,17 @@
   list-style: none;
 }
 
-@mixin fontStyle($font-size:14px,$line-height:18px,$color:#111111) {
+@mixin fontStyle($font-size:14px,$line-height:1.5,$color:#111111) {
   font-size: $font-size;
   line-height: $line-height;
 }
 
 @mixin oswaldMed() {
-  font-family: 'Oswald';
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 500;
 }
 
 @mixin oswaldReg() {
-  font-family: 'Oswald';
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
 }

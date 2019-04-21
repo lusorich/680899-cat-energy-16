@@ -1,4 +1,14 @@
 .copyright {
-  line-height: 18px;
-  color: $grey;
+  //временно
+  min-height: 78px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright__link {
+  @include fontStyle(16px,16px);
+  margin: 0;
+  padding: 0;
+  color: #444444;
 }

@@ -1,15 +1,21 @@
 .page__title {
   @include oswaldReg;
   @include fontStyle(36px,36px,$white);
-}
-.page__slogan {
-  font-size:14px;
-  line-height: 14px;
+  margin: 23px 0 0;
+  padding: 0 17px 0 0;
   color: #111111;
+
+  &--form-title {
+    line-height: 60px;
+    color: #111111;
+  }
 }
 
-.page__title--form-title {
-  line-height: 60px;
+.page__slogan {
+  margin: 20px 0 0;
+  padding: 0 40px 0 0;
+  font-size: 14px;
+  line-height: 14px;
   color: #111111;
 }
 
@@ -17,4 +23,10 @@
   @include oswaldReg;
   @include fontStyle(14px,18px);
   color: #111111;
+}
+
+.page__wrapper--button {
+  @media (min-width: $tablet-width) {
+    width: 245px;
+  }
 }
