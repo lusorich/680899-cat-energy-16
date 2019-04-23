@@ -1,8 +1,18 @@
+.page__wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-size: 320px 305px;
+  background-repeat: no-repeat;
+}
+
+
 .page__title {
   @include oswaldReg;
   @include fontStyle(36px,36px,$white);
-  margin: 23px 0 0;
-  padding: 0 17px 0 0;
+  margin: 27px 0 0;
+  padding: 0;
   color: #111111;
 
   &--form-title {
@@ -12,11 +22,11 @@
 }
 
 .page__slogan {
-  margin: 20px 0 0;
-  padding: 0 40px 0 0;
-  font-size: 14px;
-  line-height: 14px;
-  color: #111111;
+  @include oswaldReg;
+  @include fontStyle(14px,14px,$white);
+  margin: 25px 0 0;
+  padding: 0;
+  text-transform: uppercase;
 }
 
 .page__desc {
@@ -26,7 +36,13 @@
 }
 
 .page__wrapper--button {
+  margin: 3px 20px 0;
+
   @media (min-width: $tablet-width) {
     width: 245px;
   }
+}
+
+.page__img {
+  margin: 9% 0 0 6.25%;
 }
