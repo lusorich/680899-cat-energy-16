@@ -2,9 +2,18 @@
   background-color: $grey;
 }
 
+.example__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  margin-top: 42px;
+}
+
 .example__title {
-  @include oswaldMed;
+  @include oswaldReg;
   @include fontStyle(36px,60px);
+  margin: 0;
+  padding: 17px 0 0 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -12,6 +21,8 @@
 }
 
 .example__desc {
+  margin: 0;
+  padding: 23px 10px 0 0;
   color: #444444;
 
   @media (min-width: $tablet-width) {
@@ -23,6 +34,9 @@
   @include oswaldReg;
   @include fontStyle(14px,20px);
   color: #111111;
+  text-transform: uppercase;
+  padding: 0 46px;
+  margin: 36px 0 0 0;
 
   @media (min-width: $tablet-width) {
     @include fontStyle(20px,20px);
@@ -38,4 +52,41 @@
   @media (min-width: $tablet-width) {
     line-height: 20px;
   }
+}
+
+.example__kg {
+  box-sizing: border-box;
+  min-width: 124px;
+  min-height: 54px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  position: relative;
+  margin-top: 25px;
+
+  &--kg {
+    margin-right: 32px;
+  }
+}
+
+.example__kg-wrapper {
+  position: absolute;
+  background-color: #f2f2f2;
+  margin: 13px 0 0 18px;
+  max-width: 87px;
+  text-align: center;
+}
+
+.example__kg-title {
+  @include oswaldReg;
+  @include fontStyle(24px, 24px);
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.example__kg-desc {
+  font-size: 12px;
+  line-height: 12px;
+  color: #444444;
+  margin: 6px 0 0 0;
+  padding: 0 16px;
 }
