@@ -1,6 +1,6 @@
 .button {
   @include oswaldReg;
-  @include fontStyle(16px,20px);
+  @include fontStyle(14px,18px);
   display: block;
   text-align: center;
   color: $white;
