@@ -1,6 +1,33 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+
+<!-- Pixel Glass -->
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* По умолчанию показывается мобильный макет */
+    background-image: url( "pixelPerfect/cat-energy-index-mobile.jpg" );
+  }
+  /* Планшет */
+  @media ( min-width: 760px ) {
+    HTML {
+      /* Планшетный макет */
+      background-image: url( "img/760.png" );
+    }
+  }
+  /* Десктоп */
+  @media ( min-width: 960px ) {
+    HTML {
+      /* Десктопный макет */
+      background-image: url( "img/960.png" );
+    }
+  }
+</style>
+<link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+<script src="../node_modules/pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cat-energy</title>
