@@ -7,6 +7,12 @@
   text-transform: uppercase;
   padding-top: 12px;
   padding-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    @include fontStyle(20px,20px);
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 
 .button--link-green {
