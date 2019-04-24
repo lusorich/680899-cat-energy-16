@@ -5,6 +5,10 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-size: 320px 305px;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background: none;
+  }
 }
 
 
@@ -19,6 +23,13 @@
     line-height: 60px;
     color: #111111;
   }
+
+  @media(min-width: $tablet-width) {
+    @include fontStyle(60px,60px,#111111);
+    padding: 0 80px 0 120px;
+    margin-top: 63px;
+    text-align: start;
+  }
 }
 
 .page__slogan {
@@ -27,6 +38,13 @@
   margin: 25px 0 0;
   padding: 0;
   text-transform: uppercase;
+
+  @media(min-width: $tablet-width) {
+    @include fontStyle(20px,20px,#111111)
+    margin-top: 42px;
+    text-align: start;
+    padding: 0 30px 0 120px;
+  }
 }
 
 .page__desc {
@@ -40,9 +58,24 @@
 
   @media (min-width: $tablet-width) {
     width: 245px;
+    margin-top: 47px;
+    margin-left: 118px;
+    z-index: 1
   }
 }
 
 .page__img {
   margin: 9% 0 0 6.25%;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+picture {
+  @media (min-width: $tablet-width) {
+    margin-top: -80px;
+    order: 2;
+    height: 609px;
+  }
 }

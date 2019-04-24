@@ -90,6 +90,7 @@
 
   @media (min-width: $tablet-width) {
     @include fontStyle(60px,60px);
+    margin: 16px 30px 0 30px;
   }
 }
 

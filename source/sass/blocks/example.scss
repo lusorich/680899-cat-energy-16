@@ -5,7 +5,7 @@
 .example__wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 20px;
+  padding: 0 20px 30px;
   margin-top: 42px;
 }
 
@@ -89,4 +89,15 @@
   color: #444444;
   margin: 6px 0 0 0;
   padding: 0 16px;
+}
+
+.example__img {
+  margin: 40px 0 0 -15px;
+}
+
+.example__range-wrapper {
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
 }
