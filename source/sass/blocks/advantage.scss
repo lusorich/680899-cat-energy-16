@@ -5,6 +5,12 @@
   list-style: none;
   margin: 27px 20px 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 70px 30px 50px;
+    border-bottom: 1px solid #f2f2f2;
+  }
 }
 
 .advantage__green {
@@ -13,14 +19,21 @@
   height: 60px;
   background-color: #68b738;
 
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+
+  }
+
   &--leaf {
     &::before {
     content: "";
     position: absolute;
-    width: 60px;
-    height: 60px;
+    width: 100%;
+    height: 100%;
     background-image: url("../img/advantage-leaf@1x.png");
     background-position: center;
+    background-repeat: no-repeat;
     }
   }
 
@@ -28,10 +41,11 @@
     &::before {
     content: "";
     position: absolute;
-    width: 60px;
-    height: 60px;
+    width: 100%;
+    height: 100%;
     background-image: url("../img/advantage-powder@1x.png");
     background-position: center;
+    background-repeat: no-repeat;
     }
   }
 
@@ -39,10 +53,11 @@
     &::before {
     content: "";
     position: absolute;
-    width: 60px;
-    height: 60px;
+    width: 100%;
+    height: 100%;
     background-image: url("../img/advantage-dining@1x.png");
     background-position: center;
+    background-repeat: no-repeat;
     }
   }
 
@@ -50,10 +65,11 @@
     &::before {
     content: "";
     position: absolute;
-    width: 60px;
-    height: 60px;
+    width: 100%;
+    height: 100%;
     background-image: url("../img/advantage-clock@1x.png");
     background-position: center;
+    background-repeat: no-repeat;
     }
   }
 }
@@ -67,17 +83,71 @@
     margin-top: 0;
   }
 
+  &:nth-child(2n) {
+    padding: 0 0 50px 30px;
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     width: 50%;
-    //временно
-    height: 270px;
+    flex-direction: column;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
     width: 25%;
+  }
+
+  &--1 {
+    &::before {
+      content: "1";
+      position: absolute;
+      top: 92px;
+      right: 125px;
+      font-size: 281px;
+      color: #f2f2f2;
+      font-family: "Oswald","Arial",sans-serif;
+    }
+  }
+
+  &--2 {
+    &::before {
+      content: "2";
+      position: absolute;
+      top: 92px;
+      right: 78px;
+      font-size: 281px;
+      color: #f2f2f2;
+      font-family: "Oswald","Arial",sans-serif;
+    }
+  }
+
+  &--3 {
+    margin: 81px 0 0 0;
+    &::before {
+      content: "3";
+      position: absolute;
+      top: 92px;
+      right: 108px;
+      font-size: 281px;
+      color: #f2f2f2;
+      font-family: "Oswald","Arial",sans-serif;
+    }
+  }
+
+  &--4 {
+    margin: 81px 0 0 0;
+    &::before {
+      content: "4";
+      position: absolute;
+      top: 92px;
+      right: 75px;
+      font-size: 281px;
+      color: #f2f2f2;
+      font-family: "Oswald","Arial",sans-serif;
+    }
   }
 }
 
@@ -101,5 +171,7 @@
 
   @media (min-width: $tablet-width) {
     @include fontStyle(16px);
+    padding: 34px 90px 0 0;
+    z-index: 1;
   }
 }
