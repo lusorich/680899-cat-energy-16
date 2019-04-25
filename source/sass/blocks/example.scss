@@ -1,5 +1,9 @@
 .example {
   background-color: $grey;
+
+  @media (min-width: $tablet-width) {
+    background: none;
+  }
 }
 
 .example__wrapper {
@@ -7,6 +11,11 @@
   flex-wrap: wrap;
   padding: 0 20px 30px;
   margin-top: 42px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 0;
+    margin-top: 44px;
+  }
 }
 
 .example__title {
@@ -17,6 +26,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
+    padding: 0;
   }
 }
 
@@ -27,6 +37,7 @@
 
   @media (min-width: $tablet-width) {
     @include fontStyle(16px);
+    padding: 63px 10px 0 0;
   }
 }
 
@@ -35,11 +46,17 @@
   @include fontStyle(14px,20px);
   color: #111111;
   text-transform: uppercase;
-  padding: 0 46px;
-  margin: 36px 0 0 0;
+  padding: 0;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     @include fontStyle(20px,20px);
+  }
+
+  &--rub {
+    @media (min-width: $tablet-width) {
+      padding: 10px 0 0 0;
+    }
   }
 }
 
@@ -54,7 +71,7 @@
   }
 }
 
-.example__kg {
+.example__result {
   box-sizing: border-box;
   min-width: 124px;
   min-height: 54px;
@@ -63,32 +80,62 @@
   position: relative;
   margin-top: 25px;
 
+  @media (min-width: $tablet-width) {
+    min-width: 162px;
+    min-height: 72px;
+    margin-top: 54px;
+  }
+
   &--kg {
     margin-right: 32px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 42px;
+    }
   }
 }
 
-.example__kg-wrapper {
+.example__result-wrapper {
   position: absolute;
   background-color: #f2f2f2;
-  margin: 13px 0 0 18px;
+  margin: 16px 0 0 18px;
   max-width: 87px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+    margin: 16px 0 0 8px;
+    min-width: 142px;
+  }
 }
 
-.example__kg-title {
+.example__wrapper-inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.example__result-title {
   @include oswaldReg;
-  @include fontStyle(24px, 24px);
+  @include fontStyle(24px,24px);
   color: #111111;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include fontStyle(30px,36px);
+  }
 }
 
-.example__kg-desc {
-  font-size: 12px;
-  line-height: 12px;
+.example__result-desc {
+  @include fontStyle(12px,12px);
   color: #444444;
   margin: 6px 0 0 0;
   padding: 0 16px;
+
+  @media (min-width: $tablet-width) {
+    @include fontStyle(14px,14px);
+    margin: 10px 0 0 0;
+    padding: 0;
+  }
 }
 
 .example__img {
@@ -100,4 +147,15 @@
   display: flex;
   justify-content: center;
   margin-top: 35px;
+}
+
+.example__cost-wrapper {
+  padding: 36px 0 0 48px;
+  display: flex;
+  flex-wrap: wrap;
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    text-align: end;
+    padding: 65px 0 0 167px;
+  }
 }
