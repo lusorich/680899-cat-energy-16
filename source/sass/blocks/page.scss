@@ -54,7 +54,7 @@
 }
 
 .page__wrapper--button {
-  margin: 3px 20px 0;
+  margin: 0 20px;
 
   @media (min-width: $tablet-width) {
     width: 245px;
@@ -72,7 +72,8 @@
   }
 }
 
-picture {
+.page__picture {
+  margin-top: 27px;
   @media (min-width: $tablet-width) {
     margin-top: -80px;
     order: 2;
