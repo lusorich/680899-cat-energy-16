@@ -62,7 +62,7 @@
         <div class="page__wrapper">
           <h1 class="page__title">Функциональное питание для котов</h1>
           <p class="page__slogan">Занялся собой? Займись котом!</p>
-          <picture>
+          <picture class="page__picture">
             <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
             <source media="(min-width: 320px)" srcset="img/index-can-mobile@1x.png">
               <img src="img/index-can-mobile@1x.png">
@@ -153,14 +153,16 @@
               </div>
            </div>
 
-          <div class="example__img-wrapper">
-            <img class="example__img" width="311px" height="232px" src="img/before-mobile@1x.png">
+          <picture class="example__picture">
+            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+            <source media="(min-width: 320px)" srcset="img/before-mobile@1x.png">
+              <img class="example__img" src="img/before-mobile@1x.png">
+          </picture>
             <div class="example__range-wrapper">
               <span class="example__phrase">Было</span>
               <input type="range">
               <span class="example__phrase">Стало</span>
             </div>
-          </div>
         </div>
         </section>
       </main>
