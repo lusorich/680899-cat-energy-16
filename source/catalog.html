@@ -1,6 +1,32 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <!-- Pixel Glass -->
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* По умолчанию показывается мобильный макет */
+    background-image: url( "pixelPerfect/cat-energy-catalog-mobile.jpg" );
+  }
+  /* Планшет */
+  @media ( min-width: 768px ) {
+    HTML {
+      /* Планшетный макет */
+      background-image: url( "pixelPerfect/cat-energy-catalog-tablet.jpg" );
+    }
+  }
+  /* Десктоп */
+  @media ( min-width: 1440px ) {
+    HTML {
+      /* Десктопный макет */
+      background-image: url( "pixelPerfect/cat-energy-catalog-desktop.jpg" );
+    }
+  }
+</style>
+<link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+<script src="../node_modules/pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Catalog Cat Energy</title>
@@ -38,7 +64,14 @@
             <li class="catalog__item">
               <article class="product-card">
                 <a class="product-card__link product-card__link--img" href="#">
-                  <img class="product-card__img" src="img/index-can-mobile@1x.png" alt="Фото товара" width="140px" height="144px">
+
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/chicken-small-desktop@1x.png">
+                  <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.jpg">
+                  <source media="(min-width: 320px)" srcset="img/chicken-small-mobile@1x.jpg">
+                  <img class="product-card__img" src="img/chicken-small-mobile@1x.jpg" alt="Фото товара">
+                </picture>
+
                 </a>
                 <div class="product-card__wrapper">
                   <a class="product-card__link product-card__link--title" href="#">
@@ -69,7 +102,12 @@
             <li class="catalog__item">
               <article class="product-card">
                 <a class="product-card__link product-card__link--img" href="#">
-                  <img class="product-card__img" src="img/index-can-mobile@1x.png" alt="Фото товара" width="140px" height="144px">
+                   <picture>
+                  <source media="(min-width: 1440px)" srcset="img/chicken-big-desktop@1x.png">
+                  <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.jpg">
+                  <source media="(min-width: 320px)" srcset="img/chicken-big-mobile@1x.jpg">
+                  <img class="product-card__img" src="img/chicken-big-mobile@1x.jpg" alt="Фото товара">
+                </picture>
                 </a>
                 <div class="product-card__wrapper">
                   <a class="product-card__link product-card__link--title" href="#">
@@ -100,7 +138,12 @@
             <li class="catalog__item">
               <article class="product-card">
                 <a class="product-card__link product-card__link--img" href="#">
-                  <img class="product-card__img" src="img/index-can-mobile@1x.png" alt="Фото товара" width="140px" height="144px">
+                   <picture>
+                  <source media="(min-width: 1440px)" srcset="img/fish-small-desktop@1x.png">
+                  <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.jpg">
+                  <source media="(min-width: 320px)" srcset="img/fish-small-mobile@1x.jpg">
+                  <img class="product-card__img" src="img/fish-small-mobile@1x.jpg" alt="Фото товара">
+                </picture>
                 </a>
                 <div class="product-card__wrapper">
                   <a class="product-card__link product-card__link--title" href="#">
@@ -131,7 +174,12 @@
             <li class="catalog__item">
               <article class="product-card">
                 <a class="product-card__link product-card__link--img" href="#">
-                  <img class="product-card__img" src="img/index-can-mobile@1x.png" alt="Фото товара" width="140px" height="144px">
+                   <picture>
+                  <source media="(min-width: 1440px)" srcset="img/fish-big-desktop@1x.png">
+                  <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.jpg">
+                  <source media="(min-width: 320px)" srcset="img/fish-big-mobile@1x.jpg">
+                  <img class="product-card__img" src="img/fish-big-mobile@1x.jpg" alt="Фото товара">
+                </picture>
                 </a>
                 <div class="product-card__wrapper">
                   <a class="product-card__link product-card__link--title" href="#">
@@ -162,7 +210,12 @@
             <li class="catalog__item">
               <article class="product-card">
                 <a class="product-card__link product-card__link--img" href="#">
-                  <img class="product-card__img" src="img/index-can-mobile@1x.png" alt="Фото товара" width="140px" height="144px">
+                   <picture>
+                  <source media="(min-width: 1440px)" srcset="img/buckwheat-small-desktop@1x.png">
+                  <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png">
+                  <source media="(min-width: 320px)" srcset="img/buckwheat-small-mobile@1x.jpg">
+                  <img class="product-card__img" src="img/buckwheat-small-mobile@1x.jpg" alt="Фото товара">
+                </picture>
                 </a>
                 <div class="product-card__wrapper">
                   <a class="product-card__link product-card__link--title" href="#">
@@ -193,7 +246,12 @@
             <li class="catalog__item">
               <article class="product-card">
                 <a class="product-card__link product-card__link--img" href="#">
-                  <img class="product-card__img" src="img/index-can-mobile@1x.png" alt="Фото товара" width="140px" height="144px">
+                  <picture>
+                  <source media="(min-width: 1440px)" srcset="img/buckwheat-big-desktop@1x.png">
+                  <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png">
+                  <source media="(min-width: 320px)" srcset="img/buckwheat-big-mobile@1x.jpg">
+                  <img class="product-card__img" src="img/buckwheat-big-mobile@1x.jpg" alt="Фото товара">
+                </picture>
                 </a>
                 <div class="product-card__wrapper">
                   <a class="product-card__link product-card__link--title" href="#">
@@ -224,7 +282,12 @@
             <li class="catalog__item">
               <article class="product-card">
                 <a class="product-card__link product-card__link--img" href="#">
-                  <img class="product-card__img" src="img/index-can-mobile@1x.png" alt="Фото товара" width="140px" height="144px">
+                  <picture>
+                  <source media="(min-width: 1440px)" srcset="img/rice-small-desktop@1x.png">
+                  <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png">
+                  <source media="(min-width: 320px)" srcset="img/rice-small-mobile@1x.jpg">
+                  <img class="product-card__img" src="img/rice-small-mobile@1x.jpg" alt="Фото товара">
+                </picture>
                 </a>
                 <div class="product-card__wrapper">
                   <a class="product-card__link product-card__link--title" href="#">
