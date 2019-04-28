@@ -34,7 +34,6 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="container">
       <header class="page-header">
         <nav class="main-nav main-nav--closed">
           <div class="main-nav__wrapper">
@@ -63,6 +62,7 @@
           <h1 class="page__title">Функциональное питание для котов</h1>
           <p class="page__slogan">Занялся собой? Займись котом!</p>
           <picture class="page__picture">
+            <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png">
             <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
             <source media="(min-width: 320px)" srcset="img/index-can-mobile@1x.png">
               <img src="img/index-can-mobile@1x.png">
@@ -85,7 +85,7 @@
             </li>
             <li class="problem__item">
               <article class="problem-card">
-                <h1 class="problem-card__title">Набор массы</h1>
+                <h1 class="problem-card__title problem-card__title--weight">Набор массы</h1>
                 <p class="problem-card__desc problem-card__desc--hey">
                   Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мыщцы!
                 </p>
@@ -132,6 +132,9 @@
           <h2 class="visually-hidden">Результат от питания кормом "Cat energy"</h2>
           <div class="example__wrapper">
             <p class="example__title">Живой пример</p>
+          <div class="example__wrapper-main">
+
+            <div class="example__wrapper-wtf">
             <p class="example__desc">
               Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат   без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
             </p>
@@ -152,18 +155,29 @@
                 <p class="example__cost">Затраты на питание:</p> <span class="example__cost example__cost--rub"> 15 000 руб.</span>
               </div>
            </div>
+         </div>
 
+
+         <div class="example__wrapper-omg">
+         <div class="example__wrapper-omfg">
           <picture class="example__picture">
+            <source media="(min-width: 1444px)" srcset="img/before-desktop@1x.png">
             <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
             <source media="(min-width: 320px)" srcset="img/before-mobile@1x.png">
-              <img class="example__img" src="img/before-mobile@1x.png">
+            <img class="example__img" src="img/before-mobile@1x.png">
           </picture>
+         </div>
+
+
             <div class="example__range-wrapper">
               <span class="example__phrase">Было</span>
               <input type="range">
               <span class="example__phrase">Стало</span>
             </div>
         </div>
+       </div>
+
+      </div>
         </section>
       </main>
       <footer class="page-footer">
@@ -213,7 +227,6 @@
           </div>
         </div>
       </footer>
-    </div>
   </body>
   <script src="js/script.js"></script>
 </html>
