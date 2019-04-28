@@ -9,6 +9,11 @@
     justify-content: space-between;
     padding: 38px 30px 34px 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }
 
 .page-footer__logo-title {
