@@ -23,12 +23,17 @@
     color: #111111;
   }
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     @include fontStyle(60px,60px,#111111);
     padding: 0 80px 0 120px;
     margin-top: 63px;
     text-align: start;
     color: #111111;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 102px;
+    padding: 0 700px 0 190px;
   }
 }
 
@@ -39,12 +44,17 @@
   padding: 0;
   text-transform: uppercase;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     @include fontStyle(20px,20px,#111111)
     margin-top: 42px;
     text-align: start;
     padding: 0 30px 0 120px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 700px 0 190px;
+  }
+
 }
 
 .page__desc {
@@ -62,6 +72,10 @@
     margin-left: 118px;
     z-index: 1
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 190px;
+  }
 }
 
 .page__img {
@@ -74,9 +88,16 @@
 
 .page__picture {
   margin-top: 27px;
+
   @media (min-width: $tablet-width) {
     margin-top: -80px;
     order: 2;
     height: 609px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -360px;
+    margin-left: 236px;
+    height: 500px;
   }
 }

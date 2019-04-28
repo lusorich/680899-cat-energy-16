@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     padding: 0 0 62px 52px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 32px 62px 52px;
+  }
 }
 
 .problem-card__title {
@@ -17,6 +21,13 @@
   @media (min-width: $tablet-width) {
     @include fontStyle(36px,36px);
     padding: 78px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    &--weight {
+      padding-left: 40px;
+    }
   }
 }
 
@@ -35,8 +46,16 @@
 
   &--hey {
     @media (min-width: $tablet-width) {
+      padding-right: 312px;
+    }
+
+    @media (min-width: $desktop-width) {
        padding: 25px 315px 0 0;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 72px 0 0 0;
   }
 }
 
@@ -51,5 +70,9 @@
   @media (min-width: $tablet-width) {
     @include fontStyle(20px,20px);
     padding: 55px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 32px;
   }
 }
