@@ -1,9 +1,15 @@
 .catalog__title {
   @include oswaldReg;
   @include fontStyle(36px,60px);
+  margin: 14px 20px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
+    margin: 64px 30px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 68px 110px 0;
   }
 }
 
@@ -11,6 +17,7 @@
   @include ulStyle;
   display: flex;
   flex-direction: column;
+  margin-top: 27px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -20,16 +27,23 @@
 }
 
 .catalog__item {
+  padding: 0 20px;
+  border-top: 1px solid $grey;
   @media (min-width: $tablet-width) {
     margin-top: 140px;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid $grey;
   }
 }
 
 .catalog__item-wrapper {
   width: 280px;
-  height: 210px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
 
   @media (min-width: $tablet-width) {
     width: 324px;
@@ -42,6 +56,7 @@
   @include fontStyle(16px,20px);
   text-transform: uppercase;
   color: #111111;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -52,6 +67,8 @@
   @include fontStyle(12px,16px);
   color: #444444;
   font-weight: 400px;
+  margin: 0;
+  padding-top: 8px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
