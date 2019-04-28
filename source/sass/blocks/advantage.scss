@@ -7,9 +7,14 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
-    padding: 70px 30px 50px;
+    margin: 70px 30px 0;
+    padding-bottom: 50px;
     border-bottom: 1px solid #f2f2f2;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 70px 110px 0 110px;
+    border: none;
   }
 }
 
@@ -84,9 +89,10 @@
       margin-top: 0;
     }
 
-
+  @media (max-width: $desktop-width - 1) {
     &:nth-child(2n) {
       padding: 0 0 50px 30px;
+      }
     }
   }
 
@@ -107,10 +113,18 @@
       font-size: 281px;
       color: #f2f2f2;
       font-family: "Oswald","Arial",sans-serif;
+
+      @media (min-width: $desktop-width) {
+        right: 76px;
+      }
     }
   }
 
   &--2 {
+    @media (min-width: $desktop-width) {
+        padding-left: 20px;
+    }
+
     &::before {
       content: "2";
       position: absolute;
@@ -119,11 +133,21 @@
       font-size: 281px;
       color: #f2f2f2;
       font-family: "Oswald","Arial",sans-serif;
+
+      @media (min-width: $desktop-width) {
+        right: 40px;
+      }
     }
   }
 
   &--3 {
     margin: 81px 0 0 0;
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      padding-left: 40px;
+    }
+
     &::before {
       content: "3";
       position: absolute;
@@ -132,11 +156,21 @@
       font-size: 281px;
       color: #f2f2f2;
       font-family: "Oswald","Arial",sans-serif;
+
+      @media (min-width: $desktop-width) {
+        right: 18px;
+      }
     }
   }
 
   &--4 {
     margin: 81px 0 0 0;
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      padding-left: 60px;
+    }
+
     &::before {
       content: "4";
       position: absolute;
@@ -145,6 +179,11 @@
       font-size: 281px;
       color: #f2f2f2;
       font-family: "Oswald","Arial",sans-serif;
+
+      @media (min-width: $desktop-width) {
+      right: 0;
+      left: 172px;
+    }
     }
   }
   }
@@ -163,7 +202,11 @@
 
   @media (min-width: $tablet-width) {
     @include fontStyle(60px,60px);
-    margin: 16px 30px 0 30px;
+    margin: 46px 30px 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 73px 110px 0 110px;
   }
 }
 
@@ -176,5 +219,9 @@
     @include fontStyle(16px);
     padding: 34px 90px 0 0;
     z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 40px;
   }
 }
