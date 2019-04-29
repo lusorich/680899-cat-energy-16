@@ -9,7 +9,7 @@
   padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
-    @include fontStyle(20px,20px);
+    @include fontStyle(20px,20px, $white);
     padding-top: 16px;
     padding-bottom: 16px;
   }
@@ -17,6 +17,14 @@
 
 .button--link-green {
   background-color: #68b738;
+}
+
+.button--product {
+  @media (min-width: $tablet-width) {
+    @include fontStyle(16px,20px, $white);
+    padding-top: 12px;
+    padding-bottom: 10px;
+  }
 }
 
 .button--link-grey {
