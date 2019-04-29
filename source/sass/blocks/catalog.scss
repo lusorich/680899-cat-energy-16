@@ -29,8 +29,11 @@
 .catalog__item {
   padding: 0 20px;
   border-top: 1px solid $grey;
+
   @media (min-width: $tablet-width) {
     margin-top: 140px;
+    padding: 0 30px;
+    border: none;
   }
 
   &:last-child {
