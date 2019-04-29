@@ -1,10 +1,13 @@
 .gift {
   width: 100%;
-  //временно
-  height: 280px;
+  margin: 40px 20px 34px 20px;
+  height: 289px;
+  width: 280px;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  align-items: flex-end;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/gift-photo-tablet@1x.jpg");
@@ -21,4 +24,6 @@
   font-size: 16px;
   line-height: 20px;
   color: $white;
+  margin: 0;
+  padding: 0 50px 42px 80px;
 }
