@@ -1,4 +1,5 @@
 .extra-product-card {
+  padding: 14px 20px 17px;
   @media (min-width: $desktop-width) {
     display: flex;
   }
@@ -9,14 +10,17 @@
   @include fontStyle(16px,16px);
   margin: 0;
   padding: 0;
+  text-transform: uppercase;
 }
 
 .extra-product-card__field {
   line-height: 14px;
+  padding: 0;
 }
 
 .extra-product-card__value {
   line-height: 14px;
+  padding: 0;
 }
 
 .extra-product-card__wrapper {
@@ -27,8 +31,19 @@
 }
 
 .extra-product-card__wrapper--button {
+  margin-top: 14px;
   @media (min-width: $desktop-width) {
     //исправить, нормально подумать проценты от родительского
     width: 30%;
   }
+}
+
+.extra-product-card__line {
+    justify-content: space-between;
+    display: flex;
+    width: 280px;
+}
+
+.extra-product-card__characteristic {
+  padding-top: 10px;
 }
