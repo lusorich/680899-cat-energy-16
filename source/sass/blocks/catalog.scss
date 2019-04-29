@@ -49,6 +49,8 @@
   padding-top: 80px;
 
   @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    padding: 38px 25px 40px;
     width: 324px;
     height: 430px;
   }
