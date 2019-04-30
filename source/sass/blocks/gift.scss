@@ -11,6 +11,12 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/gift-photo-tablet@1x.jpg");
+    margin: 70px 0 0 0;
+    padding: 65px 110px 68px 91px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    height: 200px;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,4 +32,9 @@
   color: $white;
   margin: 0;
   padding: 0 50px 42px 80px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 175px;
+  }
 }
