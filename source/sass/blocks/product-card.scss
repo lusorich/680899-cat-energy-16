@@ -6,8 +6,12 @@
   @media (min-width: $tablet-width) {
     background-color: $grey;
     flex-direction: column;
-    width: 324px;
     height: 430px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 42px;
+    height: unset;
   }
 }
 
@@ -91,6 +95,10 @@
       margin-top: 89px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 31px;
+  }
 }
 
 .product-card__link--title {
@@ -100,6 +108,10 @@
     @media (min-width: $tablet-width) {
       padding: 16px 44px 0 48px;
       text-align: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 16px 20px 0;
     }
 }
 
@@ -112,11 +124,19 @@
     @media (min-width: $tablet-width) {
       margin-top: -50px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-top: -47px;
+    }
   }
 
   &--big {
     @media (min-width: $tablet-width) {
       margin-top: -86px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: -83px;
     }
   }
 }
