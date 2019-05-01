@@ -6,8 +6,9 @@
 }
 
 .copyright__link {
-  font-family: "Arial","Oswald", sans-serif;
+  font-family: "Arial", "Oswald", sans-serif;
   font-weight: 400;
+
   @include fontStyle(16px,16px);
   margin: 0;
   padding: 0;
