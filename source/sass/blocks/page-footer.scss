@@ -2,10 +2,17 @@
   display: flex;
   flex-direction: column;
   background-color: $grey;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    padding: 38px 30px 34px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 
@@ -13,6 +20,9 @@
   display: flex;
   align-items: center;
   align-self: center;
-  //временно
-  min-height: 95px;
+  padding: 40px 0 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }

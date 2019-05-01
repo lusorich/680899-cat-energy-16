@@ -1,14 +1,17 @@
 .copyright {
-  //временно
-  min-height: 78px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 23px 0 22px;
 }
 
 .copyright__link {
+  font-family: "Arial", "Oswald", sans-serif;
+  font-weight: 400;
+
   @include fontStyle(16px,16px);
   margin: 0;
   padding: 0;
   color: #444444;
+  text-transform: none;
 }

@@ -1,21 +1,50 @@
 .example {
   background-color: $grey;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px 30px;
+  margin-top: 42px;
+
+  @media (min-width: $tablet-width) {
+    background: none;
+    padding: 0;
+    margin-top: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 54px;
+    padding: 0;
+  }
 }
 
 .example__title {
-  @include oswaldMed;
+  @include oswaldReg;
   @include fontStyle(36px,60px);
+  margin: 0;
+  padding: 17px 0 0 0;
 
   @media (min-width: $tablet-width) {
+    padding: 0 30px 0;
     font-size: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
   }
 }
 
 .example__desc {
+  margin: 0;
+  padding: 23px 10px 0 0;
   color: #444444;
 
   @media (min-width: $tablet-width) {
     @include fontStyle(16px);
+    padding: 63px 40px 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 72px 95px 0 0;
   }
 }
 
@@ -23,9 +52,42 @@
   @include oswaldReg;
   @include fontStyle(14px,20px);
   color: #111111;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     @include fontStyle(20px,20px);
+  }
+
+  &--rub {
+    @media (min-width: $tablet-width) {
+      padding: 10px 0 0 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+    }
+  }
+}
+
+.example__cost-wrapper {
+  padding: 36px 0 0 48px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    text-align: end;
+    padding: 65px 0 0 167px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin-top: 60px;
+    width: 327px;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -37,5 +99,161 @@
 
   @media (min-width: $tablet-width) {
     line-height: 20px;
+  }
+}
+
+.example__result {
+  box-sizing: border-box;
+  min-width: 124px;
+  min-height: 54px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  position: relative;
+  margin-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 162px;
+    min-height: 72px;
+    margin-top: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 68px;
+  }
+
+  &--kg {
+    margin-right: 32px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 42px;
+    }
+  }
+}
+
+.example__result-wrapper {
+  position: absolute;
+  background-color: #f2f2f2;
+  margin: 16px 0 0 18px;
+  max-width: 87px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+    margin: 16px 0 0 8px;
+    min-width: 142px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $grey;
+  }
+}
+
+.example__result-title {
+  @include oswaldReg;
+  @include fontStyle(24px,24px);
+  color: #111111;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include fontStyle(30px,36px);
+  }
+}
+
+.example__result-desc {
+  @include fontStyle(12px,12px);
+  color: #444444;
+  margin: 6px 0 0 0;
+  padding: 0 16px;
+
+  @media (min-width: $tablet-width) {
+    @include fontStyle(14px,14px);
+    margin: 10px 0 0 0;
+    padding: 0;
+  }
+}
+
+.example__wrapper-inner {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 370px;
+    padding: 0;
+  }
+}
+
+.example__range-wrapper {
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin-top: 74px;
+    padding: 0 110px 68px;
+    background-color: $grey;
+    width: 100%;
+  }
+}
+
+.example__progress {
+  padding-top: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 255px;
+    padding: 0 30px 70px 30px;
+    background-color: $grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.example__desc-wrapper {
+  @media (min-width: $desktop-width) {
+    max-width: 610px;
+  }
+}
+
+.example__img-wrapper {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    height: 368px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    height: 370px;
+  }
+}
+
+.example__img {
+  position: relative;
+  right: 20px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    bottom: 168px;
+    left: 15px;
+    right: unset;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    bottom: 40px;
+    left: -36px;
   }
 }

@@ -1,43 +1,80 @@
 .problem-card {
-  padding: 0 20px;
   background-color: $grey;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 0 52px;
+    padding: 0 0 62px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 32px 62px 52px;
   }
 }
 
 .problem-card__title {
   @include oswaldReg;
   @include fontStyle(24px);
-  padding: 35px 0 0 91px;
+  padding: 30px 0 0 91px;
+  margin: 0;
   color: #111111;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    @include fontStyle(36px,36px);
     padding: 78px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+
+    &--weight {
+      padding-left: 40px;
+    }
   }
 }
 
 .problem-card__desc {
-  padding: 25px 0 20px;
+  padding: 30px 0 22px;
+  margin: 0 20px;
   color: #444444;
   border-bottom: 1px solid #d9d9d9;
 
+  @media (min-width: $tablet-width) {
+    @include fontStyle(16px, 24px);
+    margin: 0;
+    padding: 25px 280px 0 0;
+    border: none;
+  }
+
+  &--hey {
+    @media (min-width: $tablet-width) {
+      padding-right: 312px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 25px 315px 0 0;
+    }
+  }
+
   @media (min-width: $desktop-width) {
-    @include fontStyle(16px,24px);
+    padding: 72px 0 0 0;
   }
 }
 
 .problem-card__link {
   @include oswaldReg;
   @include fontStyle(16px,16px);
-  padding: 20px 0 0;
+  padding: 20px 20px;
   display: block;
   text-transform: uppercase;
   color: #111111;
 
   @media (min-width: $tablet-width) {
     @include fontStyle(20px,20px);
+    padding: 55px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 32px;
   }
 }

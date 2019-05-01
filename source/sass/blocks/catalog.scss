@@ -1,9 +1,15 @@
 .catalog__title {
   @include oswaldReg;
   @include fontStyle(36px,60px);
+  margin: 14px 20px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
+    margin: 64px 30px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 68px 110px 0;
   }
 }
 
@@ -11,29 +17,66 @@
   @include ulStyle;
   display: flex;
   flex-direction: column;
+  margin-top: 27px;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0 30px;
+    margin-top: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 70px;
   }
 }
 
 .catalog__item {
+  border-top: 1px solid $grey;
+
   @media (min-width: $tablet-width) {
-    margin-top: 140px;
+    margin-top: 142px;
+    border: none;
+    width: 46%;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid $grey;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 25%;
+    box-sizing: border-box;
+    padding: 0 40px;
+    margin-top: 141px;
   }
 }
 
 .catalog__item-wrapper {
   width: 280px;
-  height: 210px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
 
   @media (min-width: $tablet-width) {
-    width: 324px;
-    height: 430px;
+    box-sizing: border-box;
+    padding: 163px 37px 38px 38px;
+    width: 100%;
+    min-height: 430px;
+    text-align: center;
+    border: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding: 161px 36px 38px 37px;
   }
 }
 
@@ -42,9 +85,15 @@
   @include fontStyle(16px,20px);
   text-transform: uppercase;
   color: #111111;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    padding: 0 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -52,8 +101,16 @@
   @include fontStyle(12px,16px);
   color: #444444;
   font-weight: 400px;
+  margin: 0;
+  padding-top: 8px;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
+    padding: 26px 30px 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 28px 0 55px;
   }
 }

@@ -1,18 +1,37 @@
 .gift {
-  width: 100%;
-  //временно
-  height: 280px;
+  margin: 40px 20px 34px 20px;
+  min-height: 289px;
+  max-width: 280px;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 65px 48px 44px 50px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/gift-photo-tablet@1x.jpg");
+    margin: 70px 0 0 0;
+    padding: 65px 110px 68px 91px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    flex-direction: row;
+    min-height: 200px;
+    max-width: 100%;
+    text-align: start;
   }
 
   @media (min-width: $desktop-width) {
-    //сделать норм
-    width: 245px;
+    padding: 63px 35px 40px;
+    margin: 0 0 0 80px;
+    min-height: 290;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
   }
 }
@@ -21,4 +40,10 @@
   font-size: 16px;
   line-height: 20px;
   color: $white;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 175px;
+  }
 }

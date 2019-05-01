@@ -4,16 +4,35 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
   }
 }
 
 .main-nav__wrapper {
-  height: 70px;
+  display: flex;
+  align-items: center;
+  height: 65px;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin-top: 56px;
+  }
 }
 
 .main-nav__list {
   @include ulStyle;
-  @include fontStyle(20px,20px);
+  @include fontStyle(20px, 20px);
   @include oswaldMed;
   text-transform: uppercase;
   display: flex;
@@ -21,9 +40,16 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    @include fontStyle(18px, 26px);
+    @include oswaldReg;
     flex-direction: row;
     justify-content: flex-end;
-    margin-top: 45px;
+    margin-top: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include fontStyle(20px, 26px);
+    margin-top: 70px;
   }
 }
 
@@ -35,8 +61,22 @@
 
   @media (min-width: $tablet-width) {
     border: 0;
-    padding: 0;
+    padding: 0 0 7px 0;
     color: #222222;
+  }
+
+  &--active {
+    border-bottom: 2px solid #68b738;
+  }
+}
+
+.main-nav__list li {
+  @media (min-width: $tablet-width) {
+    padding: 0 35px 0 0;
+
+    &:last-child {
+      padding: 0;
+    }
   }
 }
 
@@ -44,7 +84,7 @@
   cursor: pointer;
   position: absolute;
   top: 22px;
-  right: 0;
+  right: 20px;
   z-index: 2;
   width: 24px;
   height: 18px;
@@ -70,7 +110,7 @@
   cursor: pointer;
   position: absolute;
   top: 22px;
-  right: 0;
+  right: 22px;
   z-index: 2;
   width: 18px;
   height: 18px;
@@ -81,8 +121,7 @@
     content: "";
     position: absolute;
     top: 0;
-    right: 0;
-    left: 2px;
+    right: 1px;
     width: 18px;
     height: 18px;
     background-image: url("../img/icon-close.svg");
@@ -93,7 +132,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $tablet-width - 1px) {
   .main-nav--closed .main-nav__list {
     display: none;
   }

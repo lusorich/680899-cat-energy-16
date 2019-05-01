@@ -1,22 +1,59 @@
+.page__wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-size: 320px 305px;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background: none;
+  }
+}
+
+
 .page__title {
   @include oswaldReg;
   @include fontStyle(36px,36px,$white);
-  margin: 23px 0 0;
-  padding: 0 17px 0 0;
-  color: #111111;
+  margin: 27px 0 0;
+  padding: 0;
 
   &--form-title {
     line-height: 60px;
     color: #111111;
   }
+
+  @media (min-width: $tablet-width) {
+    @include fontStyle(60px,60px,#111111);
+    padding: 0 80px 0 120px;
+    margin-top: 63px;
+    text-align: start;
+    color: #111111;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 102px;
+    padding: 0 700px 0 190px;
+  }
 }
 
 .page__slogan {
-  margin: 20px 0 0;
-  padding: 0 40px 0 0;
-  font-size: 14px;
-  line-height: 14px;
-  color: #111111;
+  @include oswaldReg;
+  @include fontStyle(14px,14px,$white);
+  margin: 25px 0 0;
+  padding: 0;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include fontStyle(20px,20px,#111111);
+    margin-top: 42px;
+    text-align: start;
+    padding: 0 30px 0 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 700px 0 190px;
+  }
 }
 
 .page__desc {
@@ -26,7 +63,40 @@
 }
 
 .page__wrapper--button {
+  margin: 0 20px;
+
   @media (min-width: $tablet-width) {
     width: 245px;
+    margin-top: 47px;
+    margin-left: 118px;
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 190px;
+  }
+}
+
+.page__img {
+  margin: 9% 0 0 6.25%;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+.page__picture {
+  margin-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -80px;
+    order: 2;
+    height: 609px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -360px;
+    margin-left: 236px;
+    height: 500px;
   }
 }
