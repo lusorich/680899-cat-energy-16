@@ -102,17 +102,17 @@
 }
 
 .product-card__link--title {
-    padding-top: 22px;
-    padding-right: 40px;
+  padding-top: 22px;
+  padding-right: 40px;
 
-    @media (min-width: $tablet-width) {
-      padding: 16px 44px 0 48px;
-      text-align: center;
-    }
+  @media (min-width: $tablet-width) {
+    padding: 16px 44px 0 48px;
+    text-align: center;
+  }
 
-    @media (min-width: $desktop-width) {
-      padding: 16px 20px 0;
-    }
+  @media (min-width: $desktop-width) {
+    padding: 16px 20px 0;
+  }
 }
 
 .product-card__link--img {

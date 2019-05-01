@@ -40,7 +40,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    @include fontStyle(18px, 26px)
+    @include fontStyle(18px, 26px);
     @include oswaldReg;
     flex-direction: row;
     justify-content: flex-end;
@@ -73,9 +73,10 @@
 .main-nav__list li {
   @media (min-width: $tablet-width) {
     padding: 0 35px 0 0;
-  &:last-child {
-    padding:0;
-  }
+
+    &:last-child {
+      padding: 0;
+    }
   }
 }
 
