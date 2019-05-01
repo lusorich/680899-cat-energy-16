@@ -20,6 +20,10 @@
   @media (min-width: $tablet-width) {
     width: 50%;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 35%;
+  }
 }
 
 .extra-product-card__field {
@@ -32,6 +36,10 @@
     min-width: 220px;
     text-align: end;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
 }
 
 .extra-product-card__value {
@@ -42,12 +50,22 @@
     font-size: 16px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 58px;
+    text-align: start;
+  }
 }
 
 .extra-product-card__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 26px 19px 21px 1px;
+    width: 100%;
   }
 }
 
@@ -59,20 +77,21 @@
   }
 
   @media (min-width: $desktop-width) {
-    //исправить, нормально подумать проценты от родительского
-    width: 30%;
+    box-sizing: border-box;
+    margin-top: 15px;
+    width: 38.9%;
   }
 }
 
 .extra-product-card__line {
-    justify-content: space-between;
-    display: flex;
-    width: 280px;
+  justify-content: space-between;
+  display: flex;
+  width: 280px;
 
-    @media (min-width: $tablet-width) {
-      width: 100%;
-      box-sizing: border-box;
-    }
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
 
 .extra-product-card__characteristic {
@@ -81,5 +100,11 @@
   @media (min-width: $tablet-width) {
     width: 50%;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+    width: 63%;
+    padding-left: 91px;
   }
 }
