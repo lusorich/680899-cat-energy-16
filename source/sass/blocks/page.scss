@@ -21,6 +21,8 @@
   &--form-title {
     line-height: 60px;
     color: #111111;
+    margin-top: 15px;
+    padding: 0 20px;
   }
 
   @media (min-width: $tablet-width) {
@@ -60,6 +62,12 @@
   @include oswaldReg;
   @include fontStyle(14px,18px);
   color: #111111;
+
+  &--form {
+    text-transform: uppercase;
+    margin-top: 25px;
+    padding: 0 70px 0 20px;
+  }
 }
 
 .page__wrapper--button {
