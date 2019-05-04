@@ -1,7 +1,17 @@
+.form {
+  padding: 0 20px;
+}
+
 .form__fieldset {
   margin: 0;
   padding: 0;
   border: 0;
+
+  &--cat {
+    display: flex;
+    margin-top: 38px;
+    margin-bottom: 23px;
+  }
 }
 
 .form__title {
@@ -14,6 +24,14 @@
   @include oswaldReg;
   @include fontStyle(16px,18px);
   color: #222222;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .form__list {
@@ -22,4 +40,32 @@
 
 .form__required {
   line-height: 16px;
+}
+
+.form__input {
+  padding: 12px 0 12px 13px;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: start;
+}
+
+.form__input[placeholder] {
+  @include oswaldReg;
+  @include fontStyle(16px,18px,#444444);
+}
+
+.form__phrase {
+  flex-shrink: 0;
+
+  &--name {
+    margin-right: 13px;
+  }
+
+  &--weight {
+    margin-right: 17px;
+  }
+
+  &--years {
+    margin-right: 16px;
+  }
 }
