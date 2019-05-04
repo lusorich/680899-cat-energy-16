@@ -12,7 +12,24 @@
 
   &--target {
     border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
     padding: 0 20px;
+  }
+
+  &--contact {
+    padding: 0 20px;
+    margin-top: 27px;
+  }
+
+  &--comment {
+    padding: 0 20px;
+    margin-top: 28px;
+  }
+
+  &--extra {
+    padding: 0 20px;
+    margin-top: 24px;
+
   }
 }
 
@@ -20,6 +37,11 @@
   @include oswaldReg;
   @include fontStyle(24px,24px);
   color: #111111;
+  padding: 0;
+
+  &--contact {
+    margin-bottom: 34px;
+  }
 }
 
 .form__label {
@@ -61,10 +83,16 @@
       left: 9px;
     }
   }
+
+
 }
 
 .form__list {
   @include ulStyle;
+
+  &--extra {
+    margin-top: 35px;
+  }
 }
 
 .form__item {
@@ -73,10 +101,31 @@
   &:last-child {
     margin-bottom: 27px;
   }
-}
 
-.form__required {
-  line-height: 16px;
+    &--extra {
+    position: relative;
+    margin-top: 0;
+    padding-left: 45px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    margin-bottom: 13px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      box-sizing: border-box;
+      width: 30px;
+      height: 30px;
+      border: 1px solid #cdcdcd;
+      left: -1px;
+      top: -1px;
+
+    }
+
+    &:last-child {
+      margin-bottom: 32px;
+    }
+  }
 }
 
 .form__input {
@@ -105,4 +154,36 @@
   &--years {
     margin-right: 16px;
   }
+
+  &--email {
+    margin-right: 11px;
+  }
+
+  &--tel {
+    margin-right: 9px;
+  }
+}
+
+.form__textarea {
+  @include oswaldReg;
+  @include fontStyle(16px,18px,#444444);
+
+  box-sizing: border-box;
+  margin-top: 35px;
+  padding-top: 12px;
+  width: 100%;
+  max-height: 150px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form__submit {
+  padding: 0 20px;
+}
+
+.form__required {
+  line-height: 16px;
+  margin: 19px 0 32px 0px;
+  padding: 0 20px;
+  text-align: center;
 }
