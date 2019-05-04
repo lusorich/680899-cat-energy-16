@@ -1,7 +1,3 @@
-.form {
-  padding: 0 20px;
-}
-
 .form__fieldset {
   margin: 0;
   padding: 0;
@@ -11,6 +7,12 @@
     display: flex;
     margin-top: 38px;
     margin-bottom: 23px;
+    padding: 0 20px;
+  }
+
+  &--target {
+    border-top: 1px solid #ededed;
+    padding: 0 20px;
   }
 }
 
@@ -27,15 +29,50 @@
   text-transform: uppercase;
   display: flex;
   align-items: center;
+  position: relative;
   margin-bottom: 13px;
 
   &:last-child {
     margin-bottom: 0;
   }
+
+  &--radio {
+    padding: 5px 0 0 45px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      box-sizing: border-box;
+      width: 30px;
+      height: 30px;
+      border: 1px solid #d1d1d1;
+      border-radius: 50%;
+      left: -1px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      box-sizing: border-box;
+      width: 12px;
+      height: 12px;
+      background-color: #68b738;
+      border-radius: 50%;
+      left: 9px;
+    }
+  }
 }
 
 .form__list {
   @include ulStyle;
+}
+
+.form__item {
+  margin-top: 20px;
+
+  &:last-child {
+    margin-bottom: 27px;
+  }
 }
 
 .form__required {
