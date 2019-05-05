@@ -1,1 +1,13 @@
-//
+.page-header__logo-img {
+  @media (min-width: $tablet-width) {
+    width: 173px;
+    height: 58px;
+    margin-top: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+    margin: 0;
+  }
+}

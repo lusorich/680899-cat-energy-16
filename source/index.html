@@ -37,7 +37,11 @@
       <nav class="main-nav main-nav--closed">
         <div class="main-nav__wrapper">
           <a class="page-header__logo" href="#">
-            <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="Логотип Cat energy" width="190px" height="40px">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="page-header__logo-img" width="193" height="38" src="img/logo-mobile.svg" alt="Логотип Cat energy">
+            </picture>
           </a>
           <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -57,19 +61,20 @@
       </nav>
     </header>
     <main class="page">
-      <div class="page__wrapper">
-        <h1 class="page__title">Функциональное питание для котов</h1>
-        <p class="page__slogan">Занялся собой? Займись котом!</p>
-        <picture class="page__picture">
-          <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png">
-          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
-          <source media="(min-width: 320px)" srcset="img/index-can-mobile@1x.png">
-          <img src="img/index-can-mobile@1x.png">
+      <section class="landing">
+        <div class="landing__wrapper">
+          <h1 class="page__title">Функциональное питание для котов</h1>
+          <p class="page__slogan">Занялся собой? Займись котом!</p>
+        </div>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+          <img class="page__picture" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x">
         </picture>
-        <div class="page__wrapper page__wrapper--button">
+        <div class="landing__button">
           <a class="button button--link-green" href="catalog.html">Подобрать программу</a>
         </div>
-      </div>
+      </section>
       <section class="problem">
         <h2 class="visually-hidden">Цель, с которой вам поможет корм "Cat energy"</h2>
         <ul class="problem__list">
@@ -163,10 +168,9 @@
           <div class="example__progress">
             <div class="example__img-wrapper">
               <picture>
-                <source media="(min-width: 1444px)" srcset="img/before-desktop@1x.png">
-                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
-                <source media="(min-width: 320px)" srcset="img/before-mobile@1x.png">
-                <img class="example__img" src="img/before-mobile@1x.png">
+                <source media="(min-width: 1444px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                <img class="example__img" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x">
               </picture>
             </div>
             <div class="example__range-wrapper">
@@ -197,31 +201,40 @@
       </div>
       <div class="page-footer__wrapper">
         <a class="page-footer__logo-title" href="#">
-          <img class="page-footer__logo-title-img" src="img/logo-footer.svg" alt="Cat energy" width="128px" height="24px">
+        <img class="page-footer__logo-title-img" src="img/logo-footer.svg" alt="Cat energy" width="128px" height="24px">
         </a>
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="#">
               <span class="visually-hidden">Мы в Вконтакте</span>
-              <img width="22px" height="12px" src="img/icon-vk-mobile.svg">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/icon-vk.svg">
+                <img class="social__icon--vk" width="22" height="12" src="img/icon-vk-mobile.svg">
+              </picture>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--instagram" href="#">
               <span class="visually-hidden"> Мы в Инстаграме </span>
-              <img width="16px" height="16px" src="img/icon-insta-mobile.svg">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/icon-insta.svg">
+                <img class="social__icon--insta" width="16" height="16" src="img/icon-insta-mobile.svg">
+              </picture>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="#">
               <span class="visually-hidden">Мы в Фейсбуке </span>
-              <img width="10px" height="19px" src="img/icon-fb-mobile.svg">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/icon-fb.svg">
+                <img class="social__icon--fb" width="10" height="19" src="img/icon-fb-mobile.svg">
+              </picture>
             </a>
           </li>
         </ul>
         <div class="copyright">
           <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy </a>
-          <img width="27px" height="34px" src="img/htmlacademy.svg" alt="Лого HTML Academy">
+          <img width="27" height="34" src="img/htmlacademy.svg" alt="Лого HTML Academy">
         </div>
       </div>
     </footer>

@@ -36,11 +36,8 @@
   background-color: $grey;
 }
 
-.button__wrapper {
-  display: block;
-}
-
 .button--submit {
+  @include fontStyle(16px,20px,$white);
   margin: 0;
   padding: 0;
   border: 0;

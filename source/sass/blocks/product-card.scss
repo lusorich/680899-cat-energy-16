@@ -116,7 +116,13 @@
 }
 
 .product-card__link--img {
+  max-width: 50%;
   height: 144px;
+
+  @media (min-width: $tablet-width) {
+    max-width: unset;
+    min-height: 144px;
+  }
 }
 
 .product-card__img {
