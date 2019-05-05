@@ -1,4 +1,6 @@
 .landing {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
