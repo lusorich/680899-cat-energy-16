@@ -21,6 +21,8 @@
 }
 
 .social__icon {
+  fill: #666666;
+
   &--vk {
     @media (min-width: $tablet-width) {
       width: 30px;
