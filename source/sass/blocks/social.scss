@@ -19,3 +19,26 @@
   text-align: center;
   align-self: center;
 }
+
+.social__icon {
+  &--vk {
+    @media (min-width: $tablet-width) {
+      width: 30px;
+      height: 16px;
+    }
+  }
+
+  &--fb {
+    @media (min-width: $tablet-width) {
+      width: 14px;
+      height: 28px;
+    }
+  }
+
+  &--insta {
+    @media (min-width: $tablet-width) {
+      width: 23px;
+      height: 23px;
+    }
+  }
+}
