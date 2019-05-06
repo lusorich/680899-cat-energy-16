@@ -10,6 +10,7 @@
   @media (min-width: $desktop-width) {
     min-height: 575px;
     padding: 0;
+    position: inherit;
   }
 }
 
@@ -62,7 +63,7 @@
     width: 245px;
     margin: 0;
     padding: 0;
-    top: 369px;
+    top: 292px;
     left: 118px;
   }
 

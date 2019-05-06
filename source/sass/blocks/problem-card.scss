@@ -66,8 +66,29 @@
   @include fontStyle(16px,16px);
   padding: 20px 20px;
   display: block;
+  position: relative;
   text-transform: uppercase;
   color: #111111;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: url("../img/icon-right-arrow-long.svg");
+    width: 24px;
+    height: 11px;
+    left: 117px;
+    top: 21px;
+
+    @media (min-width: $tablet-width) {
+      left: 131px;
+      top: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 126px;
+      top: 37px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     @include fontStyle(20px,20px);
@@ -76,5 +97,71 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 32px;
+  }
+
+  &--slim {
+    &::after {
+      @media (min-width: $desktop-width) {
+        left: 131px;
+      }
+    }
+  }
+}
+
+.problem-card__img {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #68b738;
+  border-radius: 50%;
+  top: 23px;
+  left: 22px;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 200px;
+    top: 93px;
+    right: 62px;
+    left: unset;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+    right: unset;
+    top: 47px;
+  }
+}
+
+.problem-card__icon {
+  position: absolute;
+
+  &--slim {
+    @media (min-width: $tablet-width) {
+      width: 140px;
+      height: 194px;
+      bottom: 18px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 70px;
+      height: 97px;
+      bottom: 10px;
+    }
+  }
+
+  &--pro {
+    @media (min-width: $tablet-width) {
+      width: 268px;
+      height: 112px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 134px;
+      height: 56px;
+    }
   }
 }
