@@ -27,14 +27,14 @@
     padding-right: 13px;
 
     @media (min-width: $tablet-width) {
-      padding-left: 3px;
+      padding-left: 23px;
       padding-right: 0;
     }
   }
 
   &--insta {
     @media (min-width: $tablet-width) {
-      padding-left: 12px;
+      padding-left: 29px;
     }
   }
 
@@ -42,7 +42,7 @@
     padding-left: 5px;
 
     @media (min-width: $tablet-width) {
-      padding-left: 7px;
+      padding-left: 23px;
     }
   }
 }

@@ -14,6 +14,10 @@
   padding: 0;
   color: #444444;
   text-transform: none;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 15px;
+  }
 }
 
 .copyright__logo {
