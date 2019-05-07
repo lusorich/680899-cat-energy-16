@@ -2,7 +2,7 @@
   background-color: $grey;
   display: flex;
   flex-wrap: wrap;
-  padding: 0 20px 30px;
+  padding: 0 20px 36px;
   margin-top: 42px;
 
   @media (min-width: $tablet-width) {
@@ -35,7 +35,7 @@
 
 .example__desc {
   margin: 0;
-  padding: 23px 10px 0 0;
+  padding: 23px 41px 0 0;
   color: #444444;
 
   @media (min-width: $tablet-width) {
@@ -44,7 +44,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 72px 95px 0 0;
+    padding: 72px 145px 0 0;
   }
 }
 
@@ -91,17 +91,6 @@
   }
 }
 
-.example__phrase {
-  @include oswaldReg;
-  @include fontStyle(16px, 20px);
-  text-transform: uppercase;
-  color: #111111;
-
-  @media (min-width: $tablet-width) {
-    line-height: 20px;
-  }
-}
-
 .example__result {
   box-sizing: border-box;
   min-width: 124px;
@@ -133,7 +122,7 @@
 .example__result-wrapper {
   position: absolute;
   background-color: #f2f2f2;
-  margin: 16px 0 0 18px;
+  margin: 13px 0 0 18px;
   max-width: 87px;
   text-align: center;
 
@@ -186,23 +175,12 @@
   }
 }
 
-.example__range-wrapper {
-  min-width: 280px;
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 30px;
-  }
-}
-
 .example__wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
     margin-top: 74px;
-    padding: 0 110px 68px;
-    background-color: $grey;
+    padding: 0 110px 70px;
+    background: linear-gradient(to right, #f2f2f2 72.8%, #eaeaea 27.2%);
     width: 100%;
   }
 }
@@ -213,12 +191,13 @@
   @media (min-width: $tablet-width) {
     margin-top: 255px;
     padding: 0 30px 70px 30px;
-    background-color: $grey;
+    background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
     padding: 0;
+    background: none;
   }
 }
 
@@ -236,24 +215,118 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
-    height: 370px;
+    height: 366px;
   }
 }
 
 .example__img {
   position: relative;
   right: 20px;
+  max-width: inherit;
+
+  &--after {
+    @media (max-width: $tablet-width - 1) {
+      display: none;
+    }
+  }
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    bottom: 168px;
+    position: absolute;
+    bottom: 21px;
     left: 15px;
     right: unset;
+
+    &--before {
+      clip: rect(auto, 338px, auto, auto);
+    }
+
+    &--after {
+      clip: rect(auto, auto, auto, 338px);
+    }
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
     bottom: 40px;
-    left: -36px;
+    left: -13px;
+
+    &--before {
+      clip: rect(auto, 364px, auto, auto);
+    }
+
+    &--after {
+      clip: rect(auto, auto, auto, 363px);
+    }
+  }
+}
+
+.example__range-wrapper {
+  max-width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  padding-left: 42px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding-left: 66px;
+    padding-bottom: 5px;
+    max-width: 575px;
+  }
+}
+
+.example__button {
+  @include oswaldReg;
+  @include fontStyle(16px, 20px);
+  text-transform: uppercase;
+  color: #111111;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    @include fontStyle(20px, 20px);
+  }
+}
+
+.example__range {
+  position: relative;
+  width: 84px;
+  height: 14px;
+  padding: 3px 5px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 20px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    justify-content: center;
+    border: none;
+    width: 428px;
+    height: 6px;
+    background-color: #dcdcdc;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 22px;
+  }
+}
+
+.example__toggle {
+  position: absolute;
+  width: 35px;
+  height: 6px;
+  background-color: #68b738;
+  border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    top: -13px;
+    left: 200px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 12px solid #ffffff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
   }
 }

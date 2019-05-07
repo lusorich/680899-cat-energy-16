@@ -71,3 +71,11 @@
     width: 175px;
   }
 }
+
+.gift__icon {
+  fill: $white;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 10px;
+  }
+}

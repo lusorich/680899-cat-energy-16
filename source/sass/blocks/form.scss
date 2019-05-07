@@ -8,6 +8,11 @@
     margin-top: 38px;
     margin-bottom: 23px;
     padding: 0 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 66px;
+      margin-bottom: 72px;
+    }
   }
 
   &--target {
@@ -30,16 +35,27 @@
     padding: 0 20px;
     margin-top: 24px;
   }
+
+  @media (min-width: $tablet-width) {
+    &--target {
+      margin: 0 67px 0 71px;
+      border: 1px solid black;
+      padding: 23px 45px 0 26px;
+    }
+  }
 }
 
 .form__title {
   @include oswaldReg;
   @include fontStyle(24px,24px);
-  color: #111111;
   padding: 0;
 
   &--contact {
     margin-bottom: 34px;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include fontStyle(36px,36px);
   }
 }
 
@@ -82,6 +98,27 @@
       left: 9px;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 47px 0 51px;
+    margin-bottom: 20px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+      left: -17px;
+    }
+
+    &::after {
+      width: 18px;
+      height: 18px;
+      left: -6px;
+    }
+
+    &--radio {
+      padding-left: 42px;
+    }
+  }
 }
 
 .form__list {
@@ -122,6 +159,15 @@
       margin-bottom: 32px;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 0 23px 18px;
+    margin: 0;
+
+    &:last-child {
+      margin-bottom: 12px;
+    }
+  }
 }
 
 .form__input {
@@ -129,11 +175,19 @@
   width: 100%;
   text-transform: uppercase;
   text-align: start;
+
+  @media (min-width: $tablet-width) {
+    padding: 9px 0 9px 18px;
+  }
 }
 
 .form__input[placeholder] {
   @include oswaldReg;
   @include fontStyle(16px,18px,#444444);
+
+  @media (min-width: $tablet-width) {
+    @include fontStyle(20px,20px,#444444);
+  }
 }
 
 .form__phrase {
@@ -141,10 +195,18 @@
 
   &--name {
     margin-right: 13px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 16px;
+    }
   }
 
   &--weight {
     margin-right: 17px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 20px;
+    }
   }
 
   &--years {
@@ -157,6 +219,10 @@
 
   &--tel {
     margin-right: 9px;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include fontStyle(20px,20px);
   }
 }
 

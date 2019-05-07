@@ -17,6 +17,10 @@
     margin-top: 63px;
     text-align: start;
     color: #111111;
+
+    &--form-title {
+      padding: 0 30px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -53,12 +57,18 @@
     text-transform: uppercase;
     margin: 25px 0 0 0;
     padding: 0 70px 0 20px;
+
+    @media (min-width: $tablet-width) {
+      @include fontStyle(20px,30px);
+      margin: 55px 0 0 0;
+      padding: 0 361px 0 69px;
+    }
   }
 }
 
 .page__picture {
   position: absolute;
-  top: 233px;
+  top: 166px;
   box-sizing: border-box;
   padding: 0 20px;
 
