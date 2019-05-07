@@ -32,7 +32,7 @@
 }
 
 .button--link-grey {
-  color: #444444;
+  @include fontStyle(16px,20px,#444444)
   background-color: $grey;
 }
 

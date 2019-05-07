@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 23px 0 22px;
+  padding: 19px 0 19px;
 }
 
 .copyright__link {
@@ -14,4 +14,9 @@
   padding: 0;
   color: #444444;
   text-transform: none;
+}
+
+.copyright__logo {
+  fill: #666666;
+  margin-right: -6px;
 }
