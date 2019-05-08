@@ -74,42 +74,50 @@
       <p class="page__desc page__desc--form"> Заполните анкету и мы подберем программу питания для вашего кота
       </p>
       <form class="form" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="form__fieldset form__fieldset--cat">
-          <legend class="visually-hidden form__title">Данные о коте</legend>
-          <label class="form__label" for="cat-name"><span class="form__phrase form__phrase--name">Имя:*</span><input class="form__input" name="cat-name" id="cat-name" type="text" value="" placeholder="Барсик">
-          </label>
-          <label class="form__label" for="cat-weight"><span class="form__phrase form__phrase--weight">Вес (кг):*</span><input class="form__input" name="cat-weight" id="cat-weight" type="text" value="" placeholder="7">
-          </label>
-          <label class="form__label" for="cat-years"><span class="form__phrase form__phrase--years">Возраст (лет):</span><input class="form__input" name="cat-years" id="cat-years" type="text" value="" placeholder="7">
-          </label>
-        </fieldset>
-        <fieldset class="form__fieldset form__fieldset--target">
-          <legend class="visually-hidden form__title">Цель</legend>
-          <ul class="form__list">
-            <li class="form__item">
-              <label class="form__label form__label--radio" for="target-loss"><input class="visually-hidden form__radio" name="target-loss" id="target-loss" type="radio" value="" checked=""><span class="form__phrase">Похудение</span></label>
-            </li>
-            <li class="form__item">
-              <label class="form__label form__label--radio" for="target-gain"><input class="visually-hidden form__radio" name="target-gain" id="target-gain" type="radio" value=""><span class="form__phrase">Набор массы</span></label>
-            </li>
-            <li class="form__item">
-              <label class="form__label form__label--radio" for="target-idk"><input class="visually-hidden form__radio" name="target-idk" id="target-idk" type="radio" value=""><span class="form__phrase">Не знаю (нужен ваш совет)</span></label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="form__wrapper">
+          <fieldset class="form__fieldset form__fieldset--cat">
+            <legend class="visually-hidden form__title">Данные о коте</legend>
+            <label class="form__label" for="cat-name"><span class="form__phrase form__phrase--name">Имя:*</span><input class="form__input" name="cat-name" id="cat-name" type="text" value="" placeholder="Барсик">
+            </label>
+            <label class="form__label" for="cat-weight"><span class="form__phrase form__phrase--weight">Вес (кг):*</span><input class="form__input" name="cat-weight" id="cat-weight" type="text" value="" placeholder="7">
+            </label>
+            <label class="form__label" for="cat-years"><span class="form__phrase form__phrase--years">Возраст (лет):</span><input class="form__input" name="cat-years" id="cat-years" type="text" value="" placeholder="7">
+            </label>
+          </fieldset>
+          <div class="form__wrapper-target">
+            <fieldset class="form__fieldset form__fieldset--target">
+              <legend class="visually-hidden form__title">Цель</legend>
+              <ul class="form__list">
+                <li class="form__item">
+                  <label class="form__label form__label--radio" for="target-loss"><input class="visually-hidden form__radio" name="target-loss" id="target-loss" type="radio" value="" checked=""><span class="form__phrase">Похудение</span></label>
+                </li>
+                <li class="form__item">
+                  <label class="form__label form__label--radio" for="target-gain"><input class="visually-hidden form__radio" name="target-gain" id="target-gain" type="radio" value=""><span class="form__phrase">Набор массы</span></label>
+                </li>
+                <li class="form__item">
+                  <label class="form__label form__label--radio" for="target-idk"><input class="visually-hidden form__radio" name="target-idk" id="target-idk" type="radio" value=""><span class="form__phrase">Не знаю (нужен ваш совет)</span></label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </div>
         <fieldset class="form__fieldset form__fieldset--contact">
           <legend class="form__title form__title--contact">Контактные данные (владельца кота)</legend>
-          <label class="form__label" for="contact-email"><span class="form__phrase form__phrase--email">E-mail:*</span><input class="form__input" name="contact-email" id="contact-email" type="email" value="" placeholder="Kuklachev@gmail.com">
-          </label>
-          <label class="form__label" for="contact-tel"><span class="form__phrase form__phrase--tel">Телефон:*</span><input class="form__input" name="contact-tel" id="contact-tel" type="tel" value="" placeholder="8(960)900-60-90">
-          </label>
+          <div class="form__wrapper-contact">
+            <label class="form__label form__label--contact-email" for="contact-email"><span class="form__phrase form__phrase--email">E-mail:*</span><input class="form__input" name="contact-email" id="contact-email" type="email" value="" placeholder="Kuklachev@gmail.com">
+            </label>
+            <label class="form__label form__label--contact-tel" for="contact-tel"><span class="form__phrase form__phrase--tel">Телефон:*</span><input class="form__input" name="contact-tel" id="contact-tel" type="tel" value="" placeholder="8 (960) 900-60-90">
+            </label>
+          </div>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--comment">
-          <legend class="form__title">Комментарий</legend>
-          <textarea class="form__textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <legend class="form__title form__title--comment">Комментарий</legend>
+          <div class="form__wrapper-textarea">
+            <textarea class="form__textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--extra">
-          <legend class="form__title">Дополнительно</legend>
+          <legend class="form__title form__title--extra">Дополнительно</legend>
           <ul class="form__list form__list--extra">
             <li class="form__item form__item--extra">
               <input class="visually-hidden form__checkbox" name="sweetener" id="sweetener" type="checkbox" checked="">
@@ -129,15 +137,17 @@
             </li>
           </ul>
         </fieldset>
-        <div class="form__submit">
-          <button class="button button--link-green button--submit" type="submit">Отправить заявку</button>
+        <div class="form__submit-wrapper">
+          <div class="form__submit">
+            <button class="button button--link-green button--submit" type="submit">Отправить заявку</button>
+          </div>
+          <p class="form__required">* — Обязательные поля</p>
         </div>
-        <p class="form__required">*- Обязательные поля</p>
       </form>
     </main>
     <footer class="page-footer">
       <div class="page-footer__contacts contacts">
-        <div class="contacts__wrapper">
+        <div class="contacts__wrapper contacts__wrapper--grey">
           <p class="contacts__desc">
             Приглашаем к сотрудничеству дилеров!
           </p>
