@@ -238,6 +238,7 @@
     padding: 5px 0 0 45px;
 
     &::before {
+      cursor: pointer;
       content: "";
       position: absolute;
       box-sizing: border-box;
@@ -249,6 +250,7 @@
     }
 
     &::after {
+      cursor: pointer;
       content: "";
       position: absolute;
       box-sizing: border-box;
@@ -258,6 +260,18 @@
       border-radius: 50%;
       left: 9px;
     }
+
+      &:hover {
+        &::before {
+          border: 1px solid  #bababa;
+        }
+      }
+
+      &:active {
+        &::before {
+          opacity: 0.3;
+        }
+      }
   }
 
   @media (min-width: $tablet-width) {
@@ -345,6 +359,7 @@
     margin-bottom: 13px;
 
     &::before {
+      cursor: pointer;
       content: "";
       position: absolute;
       box-sizing: border-box;
@@ -388,6 +403,20 @@
       max-width: 20%;
     }
   }
+
+  &:hover {
+    &::before {
+      border: 1px solid #bababa;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::before {
+      opacity: 0.3;
+    }
+  }
 }
 
 .form__input {
@@ -396,9 +425,25 @@
   text-transform: uppercase;
   text-align: start;
   border: 1px solid #e6e6e6;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     padding: 9px 0 11px 18px;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:active {
+    outline: 2px solid #444444;
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+  }
+  &:focus:invalid {
+    outline: 2px solid #ff8282;
   }
 }
 

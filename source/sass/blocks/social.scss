@@ -70,4 +70,14 @@
       height: 23px;
     }
   }
+
+  &:hover {
+    fill: #68b738
+  }
+}
+
+.social__link {
+  &:active {
+    opacity: 0.3;
+  }
 }

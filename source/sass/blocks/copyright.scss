@@ -1,13 +1,14 @@
 .copyright {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 19px 0 19px;
 }
 
 .copyright__link {
   font-family: "Arial", "Oswald", sans-serif;
   font-weight: 400;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   @include fontStyle(16px,16px);
   margin: 0;
@@ -18,9 +19,17 @@
   @media (min-width: $tablet-width) {
     padding-right: 15px;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__logo {
   fill: #666666;
   margin-right: -6px;
+}
+
+.copyright__link:hover .copyright__logo {
+  fill: #68b738;
 }

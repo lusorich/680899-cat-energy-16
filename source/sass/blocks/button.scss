@@ -7,6 +7,7 @@
   text-transform: uppercase;
   padding-top: 12px;
   padding-bottom: 10px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     @include fontStyle(20px,20px, $white);
@@ -17,6 +18,14 @@
 
 .button--link-green {
   background-color: #68b738;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button--product {
@@ -33,7 +42,15 @@
 
 .button--link-grey {
   @include fontStyle(16px,20px,#444444)
-    background-color: $grey;
+  background-color: $grey;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .button--submit {

@@ -1,4 +1,5 @@
 .page-header__logo-img {
+
   @media (min-width: $tablet-width) {
     width: 173px;
     height: 58px;
@@ -9,6 +10,14 @@
     width: 202px;
     height: 59px;
     margin: 0;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
