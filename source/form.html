@@ -77,7 +77,7 @@
         <div class="form__wrapper">
           <fieldset class="form__fieldset form__fieldset--cat">
             <legend class="visually-hidden form__title">Данные о коте</legend>
-            <label class="form__label" for="cat-name"><span class="form__phrase form__phrase--name">Имя:*</span><input class="form__input" name="cat-name" id="cat-name" type="text" value="" placeholder="Барсик">
+            <label class="form__label" for="cat-name"><span class="form__phrase form__phrase--name">Имя:*</span><input class="form__input" name="cat-name" id="cat-name" type="text" value="" placeholder="Барсик" required>
             </label>
             <label class="form__label" for="cat-weight"><span class="form__phrase form__phrase--weight">Вес (кг):*</span><input class="form__input" name="cat-weight" id="cat-weight" type="text" value="" placeholder="7">
             </label>
@@ -104,7 +104,7 @@
         <fieldset class="form__fieldset form__fieldset--contact">
           <legend class="form__title form__title--contact">Контактные данные (владельца кота)</legend>
           <div class="form__wrapper-contact">
-            <label class="form__label form__label--contact-email" for="contact-email"><span class="form__phrase form__phrase--email">E-mail:*</span><input class="form__input" name="contact-email" id="contact-email" type="email" value="" placeholder="Kuklachev@gmail.com">
+            <label class="form__label form__label--contact-email" for="contact-email"><span class="form__phrase form__phrase--email">E-mail:*</span><input class="form__input" name="contact-email" id="contact-email" type="email" value="" placeholder="Kuklachev@gmail.com" required>
             </label>
             <label class="form__label form__label--contact-tel" for="contact-tel"><span class="form__phrase form__phrase--tel">Телефон:*</span><input class="form__input" name="contact-tel" id="contact-tel" type="tel" value="" placeholder="8 (960) 900-60-90">
             </label>
@@ -193,10 +193,12 @@
           </li>
         </ul>
         <div class="copyright">
-          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy </a>
-          <svg class="copyright__logo" width="40" height="40">
-            <use xlink:href="#htmlacademy"></use>
-          </svg>
+          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="copyright__phrase">HTML Academy</span>
+            <svg class="copyright__logo" width="40" height="40">
+              <use xlink:href="#htmlacademy"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>
