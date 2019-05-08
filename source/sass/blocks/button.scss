@@ -44,4 +44,16 @@
   width: 280px;
   padding-top: 12px;
   padding-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    @include fontStyle(20px,20px,$white);
+    width: 283px;
+    margin-top: 11px;
+    padding: 15px 0 17px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin: 0;
+  }
 }

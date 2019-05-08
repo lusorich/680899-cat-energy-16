@@ -26,6 +26,11 @@
   @media (min-width: $desktop-width) {
     margin-top: 102px;
     padding: 0 820px 0 190px;
+
+    &--form-title {
+      padding: 0 110px 0 110px;
+      margin-top: 67px;
+    }
   }
 }
 
@@ -62,6 +67,10 @@
       @include fontStyle(20px,30px);
       margin: 55px 0 0 0;
       padding: 0 361px 0 69px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 970px 0 110px;
     }
   }
 }
