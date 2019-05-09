@@ -2,7 +2,7 @@
   background-color: $grey;
   display: flex;
   flex-wrap: wrap;
-  padding: 0 20px 36px;
+  padding: 0 20px 33px;
   margin-top: 42px;
 
   @media (min-width: $tablet-width) {
@@ -283,7 +283,7 @@
   color: #111111;
   border: none;
   background-color: transparent;
-  padding: 0;
+  padding: 0 0 3px 0;
   border-bottom: 1px dotted #bebebe;
   cursor: pointer;
 

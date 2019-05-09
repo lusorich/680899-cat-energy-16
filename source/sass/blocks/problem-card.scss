@@ -73,14 +73,14 @@
   &::after {
     content: "";
     position: absolute;
-    background: url("../img/icon-right-arrow-long.svg");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 11'%3E%3Cpath fill='%233f4242' d='M17.6 0l6.6 5.5-6.6 5.5V6.6H0V4.4h17.6z'/%3E%3C/svg%3E");
     width: 24px;
     height: 11px;
     left: 117px;
     top: 21px;
 
     @media (min-width: $tablet-width) {
-      left: 131px;
+      left: 126px;
       top: 60px;
     }
 
@@ -93,17 +93,38 @@
   @media (min-width: $tablet-width) {
     @include fontStyle(20px,20px);
     padding: 55px 0 0 0;
+    max-width: 26%;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 32px;
+    max-width: 35%;
   }
 
   &--slim {
     &::after {
+      @media (min-width: $tablet-width) {
+        left: 131px;
+      }
       @media (min-width: $desktop-width) {
         left: 131px;
       }
+    }
+  }
+
+  &:hover {
+    &:after {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 11'%3E%3Cpath fill='%233f4242' d='M25.4 0L32 5.5 25.4 11V6.6H0V4.4h25.4z'/%3E%3C/svg%3E");
+      width: 32px;
+      height: 11px;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &:after {
+      opacity: 0.3;
     }
   }
 }
@@ -163,5 +184,15 @@
       width: 134px;
       height: 56px;
     }
+  }
+}
+
+.problem-card__link-title {
+  @include oswaldReg;
+  @include fontStyle(16px,16px);
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include fontStyle(20px,20px);
   }
 }
