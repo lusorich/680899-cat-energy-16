@@ -35,7 +35,7 @@
 
 .example__desc {
   margin: 0;
-  padding: 23px 41px 0 0;
+  padding: 23px 10px 0 0;
   color: #444444;
 
   @media (min-width: $tablet-width) {
@@ -176,6 +176,7 @@
 }
 
 .example__wrapper {
+  width: 100%;
   @media (min-width: $desktop-width) {
     display: flex;
     margin-top: 74px;
@@ -217,6 +218,10 @@
     position: relative;
     height: 366px;
   }
+}
+
+.example__img-wrapper picture {
+  display: flex;
 }
 
 .example__img {
