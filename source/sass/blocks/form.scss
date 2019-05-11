@@ -259,19 +259,20 @@
       background-color: #68b738;
       border-radius: 50%;
       left: 9px;
+      display: none;
     }
 
-      &:hover {
-        &::before {
-          border: 1px solid  #bababa;
-        }
+    &:hover {
+      &::before {
+        border: 1px solid  #bababa;
       }
+    }
 
-      &:active {
-        &::before {
-          opacity: 0.3;
-        }
+    &:active {
+      &::before {
+        opacity: 0.3;
       }
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -320,6 +321,10 @@
       padding-bottom: 20px;
     }
   }
+}
+
+.form__radio:checked + .form__label--radio::after {
+  display: block;
 }
 
 .form__list {
@@ -442,6 +447,7 @@
   &:focus {
     outline: 2px solid #444444;
   }
+
   &:focus:invalid {
     outline: 2px solid #ff8282;
   }
