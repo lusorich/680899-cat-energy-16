@@ -234,6 +234,50 @@
     margin-bottom: 0;
   }
 
+  &--extra {
+    &::before {
+      cursor: pointer;
+      content: "";
+      position: absolute;
+      box-sizing: border-box;
+      width: 30px;
+      height: 30px;
+      border: 1px solid #cdcdcd;
+      left: -45px;
+      top: -5px;
+
+      @media (min-width: $tablet-width) {
+        width: 40px;
+        height: 40px;
+        left: -17px;
+        top: -9px;
+      }
+
+      @media (min-width: $desktop-width) {
+        left: -59px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 21 16'%3E%3Cpath fill= '%2368b738' d='M20.1 0L7.7 13.3 1 6.1 0 7.2l7.6 8.2.1.1L21 1.2l.1-.1z'/%3E%3C/svg%3E");
+      width: 21px;
+      height: 16px;
+      left: -41px;
+      top: 2px;
+      display: none;
+
+      @media (min-width: $tablet-width) {
+        left: -7px;
+      }
+
+      @media (min-width: $desktop-width) {
+        left: -48px;
+      }
+    }
+  }
+
   &--radio {
     padding: 5px 0 0 45px;
 
@@ -279,10 +323,11 @@
     padding: 0 66px 0 69px;
     margin-bottom: 20px;
 
-    &::before {
-      width: 40px;
-      height: 40px;
-      left: -17px;
+    &--radio {
+      &::before {
+        width: 40px;
+        height: 40px;
+        left: -17px;
     }
 
     &::after {
@@ -290,8 +335,6 @@
       height: 18px;
       left: -6px;
     }
-
-    &--radio {
       padding-left: 42px;
     }
 
@@ -324,6 +367,18 @@
 }
 
 .form__radio:checked + .form__label--radio::after {
+  display: block;
+}
+
+.form__radio:checked~.form__label--radio::after {
+  display: block;
+}
+
+.form__checkbox:checked + .form__label--extra::after {
+  display: block;
+}
+
+.form__checkbox:checked~.form__label--extra::after {
   display: block;
 }
 
@@ -362,23 +417,6 @@
     padding-top: 5px;
     padding-bottom: 7px;
     margin-bottom: 13px;
-
-    &::before {
-      cursor: pointer;
-      content: "";
-      position: absolute;
-      box-sizing: border-box;
-      width: 30px;
-      height: 30px;
-      border: 1px solid #cdcdcd;
-      left: -1px;
-      top: -1px;
-
-      @media (min-width: $tablet-width) {
-        width: 40px;
-        height: 40px;
-      }
-    }
 
     &:last-child {
       margin-bottom: 32px;
