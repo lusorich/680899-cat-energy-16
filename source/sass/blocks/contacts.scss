@@ -7,6 +7,7 @@
   display: flex;
   padding: 28px 20px 25px;
   width: 100%;
+  justify-content: space-between;
 
   &--grey {
     @media (max-width: $desktop-width - 1) {
@@ -21,7 +22,7 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     width: 35.5%;
-    margin-left: 110px;
+    margin-left: 40px;
     padding: 64px 30px 58px 30px;
     margin-top: 94px;
     background-color: $white;

@@ -12,3 +12,9 @@
       navMain.classList.remove('main-nav--opened');
     }
   });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    navMain.classList.remove("main-nav--opened");
+    navMain.classList.remove("main-nav--nojs");
+    navMain.classList.add("main-nav--closed");
+  });

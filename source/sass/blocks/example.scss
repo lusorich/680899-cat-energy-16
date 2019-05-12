@@ -189,7 +189,18 @@
 .example__progress {
   padding-top: 32px;
 
+  @media (max-width: $tablet-width - 1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
     margin-top: 255px;
     padding: 0 30px 70px 30px;
     background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
@@ -212,6 +223,7 @@
   @media (min-width: $tablet-width) {
     position: relative;
     height: 368px;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -226,7 +238,6 @@
 
 .example__img {
   position: relative;
-  right: 20px;
   max-width: inherit;
 
   &--after {
@@ -266,17 +277,18 @@
 }
 
 .example__range-wrapper {
-  max-width: 200px;
+  min-width: 200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 30px;
-  padding-left: 42px;
+  padding-left: 8px;
+  padding-top: 4px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    padding-left: 66px;
-    padding-bottom: 5px;
+    padding: 0 18px 0 16px;
+    width: 100%;
     max-width: 575px;
   }
 }

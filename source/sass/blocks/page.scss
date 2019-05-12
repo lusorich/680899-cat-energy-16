@@ -1,3 +1,6 @@
+.page__body{
+  min-width: 320px;
+}
 .page__title {
   @include oswaldReg;
   @include fontStyle(36px,36px,$white);

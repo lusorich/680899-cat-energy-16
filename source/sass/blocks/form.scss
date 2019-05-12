@@ -56,7 +56,7 @@
 
   &--comment {
     padding: 0 20px;
-    margin-top: 28px;
+    margin-top: 27px;
 
     @media (min-width: $tablet-width) {
       padding: 0;
@@ -87,130 +87,136 @@
   @include oswaldReg;
   @include fontStyle(24px,24px);
   padding: 0;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  background-color: $white;
 
-  &--contact {
-    margin-bottom: 34px;
-
-    @media (min-width: $tablet-width) {
-      position: relative;
-      padding: 0 188px 0 68px;
-      margin-bottom: 76px;
-
-      &::before {
+  &::after {
         content: "";
         position: absolute;
-        top: 55%;
-        left: 0;
-        width: 3.9%;
-        height: 3px;
-        margin-top: 2px;
-        background: #68b738;
-      }
-
-      &::after {
-        content: "";
-        position: absolute;
-        top: 55.5%;
+        top: 27.5%;
         right: 0;
         width: 18.8%;
         height: 3px;
         margin-top: 2px;
         background: #68b738;
+        z-index: -1;
+        width: 93.7vw;
+        left:0;
+      }
+
+
+
+  &--contact {
+    margin-right: 79px;
+    margin-bottom: 34px;
+
+    @media (min-width: 420px) {
+      padding-right: 30px;
+      margin-right: 0;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding: 0 188px 0 68px;
+      padding-left: 68px;
+      padding-right: 43px;
+      margin-bottom: 77px;
+
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 55%;
+        left: 0;
+        width: 4.9%;
+        height: 3px;
+        margin-top: 2px;
+        background: #68b738;
+      }
+
+      &::after {
+        top: 55.5%;
+        width: 100vw;
       }
     }
 
     @media (min-width: $desktop-width) {
-      padding: 0 814px 0 109px;
+      padding: 0 41px 0 110px;
 
       &::before {
-        width: 4.86%;
-      }
-
-      &::after {
-        width: 53.9%;
+        width: 10.5%;
       }
     }
   }
 
   &--comment {
+    padding-right: 22px;
+    &::after {
+      top: 50%;
+    }
     @media (min-width: $tablet-width) {
       position: relative;
-      padding: 0 520px 0 68px;
+      padding: 0 40px 0 68px;
 
       &::before {
         content: "";
         position: absolute;
         top: 55%;
         left: 0;
-        width: 3.9%;
+        width: 10.5%;
         height: 3px;
         margin-top: 2px;
         background: #68b738;
       }
 
       &::after {
-        content: "";
-        position: absolute;
-        top: 55%;
-        right: 0;
-        width: 62.5%;
-        height: 3px;
-        margin-top: 2px;
-        background: #68b738;
+        width: 100vw;
       }
     }
 
     @media (min-width: $desktop-width) {
-      padding: 0 1144px 0 110px;
+      padding: 0 41px 0 110px;
 
       &::before {
-        width: 4.86%;
-      }
-
-      &::after {
-        width: 77.2%;
+        width: 21.5%;
       }
     }
   }
 
   &--extra {
+    padding-right: 23px;
+
+    &::after {
+      top: 46%;
+    }
     @media (min-width: $tablet-width) {
       position: relative;
-      padding: 0 489px 0 68px;
-      margin-bottom: 58px;
+      padding: 0 43px 0 68px;
+      margin-bottom: 56px;
 
       &::before {
         content: "";
         position: absolute;
-        top: 55%;
+        top: 50%;
         left: 0;
-        width: 3.9%;
+        width: 9.5%;
         height: 3px;
         margin-top: 2px;
         background: #68b738;
       }
 
       &::after {
-        content: "";
-        position: absolute;
-        top: 55.5%;
-        right: 0;
-        width: 58%;
-        height: 3px;
-        margin-top: 2px;
-        background: #68b738;
+        width: 100vw;
       }
     }
 
     @media (min-width: $desktop-width) {
-      padding: 0 1119px 0 110px;
+      padding: 0 41px 0 110px;
 
       &::before {
-        width: 4.86%;
-      }
-
-      &::after {
-        width: 75%;
+        width: 19.5%;
+        top: 53%;
       }
     }
   }
@@ -226,6 +232,7 @@
   color: #222222;
   text-transform: uppercase;
   display: flex;
+  position: relative;
   align-items: center;
   position: relative;
   margin-bottom: 13px;
@@ -386,7 +393,7 @@
   @include ulStyle;
 
   &--extra {
-    margin-top: 35px;
+    margin-top: 30px;
 
     @media (min-width: $tablet-width) {
       display: flex;
@@ -562,6 +569,7 @@
   max-height: 150px;
   text-align: center;
   text-transform: uppercase;
+  border: 1px solid #e6e6e6;
 
   @media (min-width: $tablet-width) {
     @include fontStyle(20px,30px,#444444);
@@ -570,7 +578,6 @@
     margin: 76px 70px 0 71px;
     padding: 9px 0 0 17px;
     text-align: inherit;
-    border: 1px solid #e6e6e6;
   }
 
   @media (min-width: $desktop-width) {
@@ -581,6 +588,8 @@
 
 .form__submit {
   padding: 0 20px;
+  display: flex;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -651,4 +660,41 @@
   @media (min-width: $desktop-width) {
     padding: 0 110px;
   }
+}
+
+.form__icon {
+  position: absolute;
+  right: 16px;
+
+  &--phone {
+    right: 13px;
+
+    @media (min-width: $tablet-width) {
+      right: 83px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 19px;
+    }
+  }
+
+  &--email {
+    @media (min-width: $tablet-width) {
+      right: 87px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 60px;
+    }
+  }
+}
+
+.form__input:active~.form__icon,
+.form__input:focus~.form__icon {
+  fill: #68b738;
+}
+
+.form__input:invalid:active~.form__icon,
+.form__input:invalid:focus~.form__icon {
+  fill: #ff8282;
 }
