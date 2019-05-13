@@ -28,10 +28,10 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 102px;
-    padding: 0 820px 0 190px;
+    padding: 0 720px 0 120px;
 
     &--form-title {
-      padding: 0 110px 0 110px;
+      padding: 0 40px;
       margin-top: 67px;
     }
   }
@@ -52,7 +52,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 700px 0 190px;
+    padding: 0 700px 0 120px;
   }
 }
 
@@ -73,7 +73,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 0 970px 0 110px;
+      padding: 0 900px 0 40px;
     }
   }
 }
@@ -83,6 +83,10 @@
   top: 166px;
   box-sizing: border-box;
   padding: 0 20px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     position: relative;

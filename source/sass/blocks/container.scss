@@ -1,9 +1,12 @@
 .container {
   @media (min-width: $desktop-width) {
     max-width: 1300px;
-    padding-left: 40px;
-    padding-right: 40px;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  @media (min-width: 1440px) {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }

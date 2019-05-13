@@ -16,15 +16,15 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 62px 30px 58px 30px;
+    padding: 65px 30px 58px 30px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
     width: 35.5%;
-    margin-left: 40px;
+    margin-left: 110px;
     padding: 64px 30px 58px 30px;
-    margin-top: 94px;
+    margin-top: 96px;
     background-color: $white;
   }
 }
@@ -85,6 +85,7 @@
 .contacts__iframe-wrapper {
   width: 100%;
   height: 362px;
+  background: url("../img/map.png") center center no-repeat #fcf7ef;
 
   @media (min-width: $tablet-width) {
     height: 397px;

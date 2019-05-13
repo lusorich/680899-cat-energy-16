@@ -142,10 +142,17 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 0 41px 0 110px;
+      padding: 0 40px;
 
       &::before {
-        width: 10.5%;
+        width: 100vh;
+        left: -70px;
+        z-index: -1;
+        right: 0;
+      }
+
+      &::after {
+        left: -70px;
       }
     }
   }
@@ -153,7 +160,7 @@
   &--comment {
     padding-right: 22px;
     &::after {
-      top: 50%;
+      top: 55%;
     }
     @media (min-width: $tablet-width) {
       position: relative;
@@ -176,10 +183,17 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 0 41px 0 110px;
+      padding: 0 40px;
 
       &::before {
-        width: 21.5%;
+        width: 100vh;
+        left: -70px;
+        z-index: -1;
+        right: 0;
+      }
+
+      &::after {
+        left: -70px;
       }
     }
   }
@@ -188,7 +202,7 @@
     padding-right: 23px;
 
     &::after {
-      top: 46%;
+      top: 50%;
     }
     @media (min-width: $tablet-width) {
       position: relative;
@@ -212,11 +226,17 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 0 41px 0 110px;
+      padding: 0 40px;
 
       &::before {
-        width: 19.5%;
-        top: 53%;
+        width: 100vh;
+        left: -70px;
+        z-index: -1;
+        right: 0;
+      }
+
+      &::after {
+        left: -70px;
       }
     }
   }
@@ -404,7 +424,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 0 110px;
+      padding: 0 40px;
       flex-wrap: nowrap;
     }
   }
@@ -581,7 +601,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 76px 0 0 0;
+    margin: 74px 0 0 0;
     width: 100%;
   }
 }
@@ -609,7 +629,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px;
+    padding: 0 40px;
     margin-top: 59px;
     margin-bottom: 81px;
   }
@@ -636,7 +656,7 @@
 .form__wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
-    padding: 0 110px;
+    padding: 0 40px;
   }
 }
 
@@ -652,13 +672,13 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    padding: 0 110px;
+    padding: 0 40px;
   }
 }
 
 .form__wrapper-textarea {
   @media (min-width: $desktop-width) {
-    padding: 0 110px;
+    padding: 0 40px;
   }
 }
 

@@ -85,12 +85,16 @@
 
   @media (min-width: $tablet-width) {
     border: 0;
-    padding: 0 0 10px 0;
+    padding: 0 0 6px 0;
     color: #222222;
 
     &--active {
       border-bottom: 2px solid #68b738;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 10px 0;
   }
 
   &:hover {
