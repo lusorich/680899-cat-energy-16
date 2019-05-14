@@ -146,13 +146,13 @@
     height: 200px;
     top: 93px;
     right: 62px;
-    left: unset;
+    left: auto;
   }
 
   @media (min-width: $desktop-width) {
     width: 100px;
     height: 100px;
-    right: unset;
+    right: auto;
     top: 47px;
   }
 }
@@ -161,28 +161,42 @@
   position: absolute;
 
   &--slim {
+    left: 8px;
+    top: -1px;
+
     @media (min-width: $tablet-width) {
       width: 140px;
       height: 194px;
       bottom: 18px;
+      left: 30px;
+      top: -12px;
     }
 
     @media (min-width: $desktop-width) {
       width: 70px;
       height: 97px;
       bottom: 10px;
+      left: 14px;
+      top: -6px;
     }
   }
 
   &--pro {
+    left: -9px;
+    top: 10px;
+
     @media (min-width: $tablet-width) {
       width: 268px;
       height: 112px;
+      left: -34px;
+      top: 43px;
     }
 
     @media (min-width: $desktop-width) {
       width: 134px;
       height: 56px;
+      left: -18px;
+      top: 22px;
     }
   }
 }

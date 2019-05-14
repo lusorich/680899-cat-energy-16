@@ -23,7 +23,7 @@
   @media (min-width: $desktop-width) {
     width: 202px;
     height: 59px;
-    margin: 0;
+    margin: 0 0 4px 0;
   }
 
   &:hover {
@@ -73,7 +73,7 @@
 
   @media (min-width: $desktop-width) {
     @include fontStyle(20px, 26px);
-    margin-top: 70px;
+    margin-top: 72px;
   }
 }
 
@@ -94,7 +94,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 10px 0;
+    padding: 0 0 8px 0;
   }
 
   &:hover {

@@ -11,7 +11,7 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 42px;
-    height: unset;
+    height: auto;
   }
 }
 
@@ -31,6 +31,8 @@
   @include fontStyle(12px,16px);
   color: #444444;
   padding-top: 10px;
+  display: table;
+  border-collapse: collapse;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -38,31 +40,27 @@
   }
 }
 
-.product-card__characteristic td {
-  padding: 0;
-}
-
 .product-card__line {
-  width: 140px;
-  display: flex;
-  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    padding-bottom: 7px;
     border-bottom: 1px solid #cdcdcd;
+  }
+}
 
-    &--volume {
-      padding-bottom: 7px;
-    }
+.product-card__value {
+  text-align: right;
 
-    &--taste {
-      padding-top: 7px;
-    }
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid #cdcdcd;
+    padding: 8px 0;
+  }
+}
 
-    &--price {
-      padding-top: 7px;
-    }
+.product-card__field {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid #cdcdcd;
+    padding: 8px 0;
   }
 }
 
@@ -102,11 +100,10 @@
 }
 
 .product-card__link--title {
-  padding-top: 22px;
-  padding-right: 40px;
+  padding: 22px 40px 12px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 16px 44px 0 48px;
+    padding: 20px 44px 18px 47px;
     text-align: center;
   }
 
@@ -128,7 +125,7 @@
 .product-card__img {
   &--small {
     @media (min-width: $tablet-width) {
-      margin-top: -50px;
+      margin-top: -45px;
     }
 
     @media (min-width: $desktop-width) {
@@ -138,7 +135,7 @@
 
   &--big {
     @media (min-width: $tablet-width) {
-      margin-top: -86px;
+      margin-top: -81px;
     }
 
     @media (min-width: $desktop-width) {

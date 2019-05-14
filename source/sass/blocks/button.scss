@@ -29,9 +29,11 @@
 }
 
 .button--product {
+  @include fontStyle(16px,20px, $white);
+  padding-bottom: 8px;
+
   @media (min-width: $tablet-width) {
-    @include fontStyle(16px,20px, $white);
-    padding-top: 12px;
+    padding-top: 10px;
     padding-bottom: 10px;
   }
 }

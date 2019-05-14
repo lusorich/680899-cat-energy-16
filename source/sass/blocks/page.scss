@@ -23,3 +23,21 @@
     }
   }
 }
+
+.page__title--form-title {
+  @include oswaldReg;
+  @include fontStyle(36px,60px);
+  margin-top: 15px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    @include fontStyle(60px,60px,#111111);
+    margin-top: 63px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 40px;
+    margin-top: 67px;
+  }
+}
