@@ -255,7 +255,10 @@
     position: absolute;
     bottom: 21px;
     left: 15px;
-    right: unset;
+    margin: 0 auto;
+    top: -160px;
+    right: 0;
+
 
     &--before {
       clip: rect(auto, 338px, auto, auto);
