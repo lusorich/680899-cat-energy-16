@@ -1,60 +1,6 @@
 .page__body{
   min-width: 320px;
 }
-.page__title {
-  @include oswaldReg;
-  @include fontStyle(36px,36px,$white);
-  margin: 27px 0 0;
-  padding: 0;
-
-  &--form-title {
-    line-height: 60px;
-    color: #111111;
-    margin-top: 15px;
-    padding: 0 20px;
-  }
-
-  @media (min-width: $tablet-width) {
-    @include fontStyle(60px,60px,#111111);
-    padding: 0 80px 0 120px;
-    margin-top: 63px;
-    text-align: start;
-    color: #111111;
-
-    &--form-title {
-      padding: 0 30px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 102px;
-    padding: 0 720px 0 120px;
-
-    &--form-title {
-      padding: 0 40px;
-      margin-top: 67px;
-    }
-  }
-}
-
-.page__slogan {
-  @include oswaldReg;
-  @include fontStyle(14px,14px,$white);
-  margin: 25px 0 0;
-  padding: 0;
-  text-transform: uppercase;
-
-  @media (min-width: $tablet-width) {
-    @include fontStyle(20px,20px,#111111);
-    margin-top: 42px;
-    text-align: start;
-    padding: 0 30px 0 120px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 700px 0 120px;
-  }
-}
 
 .page__desc {
   @include oswaldReg;
@@ -75,31 +21,5 @@
     @media (min-width: $desktop-width) {
       padding: 0 900px 0 40px;
     }
-  }
-}
-
-.page__picture {
-  position: absolute;
-  top: 166px;
-  box-sizing: border-box;
-  padding: 0 20px;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    position: relative;
-    top: 19px;
-    left: 28px;
-    height: 609px;
-    padding: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 143px;
-    left: 560px;
-    height: 500px;
   }
 }
