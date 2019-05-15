@@ -7,12 +7,13 @@
 .extra-product-card__title {
   @include oswaldReg;
   @include fontStyle(16px,16px);
-  margin: 0;
+  margin: 0 0 13px 0;
   padding: 0;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     @include fontStyle (20px,20px);
+    margin: 0 0 6px;
   }
 }
 
@@ -34,26 +35,30 @@
     font-size: 16px;
     line-height: 20px;
     min-width: 220px;
-    text-align: end;
+    text-align: right;
   }
 
   @media (min-width: $desktop-width) {
-    text-align: start;
+    text-align: left;
   }
 }
 
 .extra-product-card__value {
   line-height: 14px;
   padding: 0;
+  text-align: right;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    width: 30%;
+    text-align: right;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 58px;
-    text-align: start;
+    width: 20%;
+    text-align: left;
   }
 }
 
@@ -64,7 +69,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 26px 19px 21px 1px;
+    padding: 26px 19px 19px 1px;
     width: 100%;
   }
 }
@@ -84,9 +89,6 @@
 }
 
 .extra-product-card__line {
-  justify-content: space-between;
-  display: flex;
-  width: 280px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -96,15 +98,18 @@
 
 .extra-product-card__characteristic {
   padding-top: 10px;
+  width: 100%;
+  border-collapse: collapse;
 
   @media (min-width: $tablet-width) {
     width: 50%;
     padding: 0;
+    margin-top: 4px;
   }
 
   @media (min-width: $desktop-width) {
     box-sizing: border-box;
-    width: 63%;
+    width: 48.5%;
     padding-left: 91px;
   }
 }

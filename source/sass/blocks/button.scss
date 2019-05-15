@@ -40,6 +40,10 @@
 
 .button--extra {
   padding-bottom: 8px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 10px;
+  }
 }
 
 .button--link-grey {

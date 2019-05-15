@@ -8,6 +8,7 @@
     margin-top: 38px;
     margin-bottom: 23px;
     padding: 0 20px;
+    flex-direction: column;
 
     @media (min-width: $tablet-width) {
       margin-top: 66px;
@@ -307,6 +308,7 @@
 
   &--radio {
     padding: 5px 0 0 45px;
+    cursor: pointer;
 
     &::before {
       cursor: pointer;

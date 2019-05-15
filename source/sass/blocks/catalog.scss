@@ -58,8 +58,8 @@
   @media (min-width: $desktop-width) {
     max-width: 25%;
     box-sizing: border-box;
-    padding: 0 40px;
-    margin-top: 141px;
+    padding: 0 40px 2px;
+    margin-top: 137px;
   }
 }
 
@@ -114,6 +114,10 @@
   @media (min-width: $desktop-width) {
     width: 100%;
     padding: 161px 36px 38px 37px;
+
+    &--more {
+      padding: 163px 36px 42px 37px;
+    }
   }
 }
 
@@ -131,6 +135,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    width: 100%;
   }
 }
 
@@ -149,5 +154,6 @@
 
   @media (min-width: $desktop-width) {
     padding: 28px 0 55px;
+    width: 100%;
   }
 }
