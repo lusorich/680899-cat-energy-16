@@ -42,7 +42,6 @@
   }
 
   &--contact {
-    padding: 0 20px;
     margin-top: 27px;
 
     @media (min-width: $tablet-width) {
@@ -56,7 +55,6 @@
   }
 
   &--comment {
-    padding: 0 20px;
     margin-top: 27px;
 
     @media (min-width: $tablet-width) {
@@ -70,7 +68,6 @@
   }
 
   &--extra {
-    padding: 0 20px;
     margin-top: 24px;
 
     @media (min-width: $tablet-width) {
@@ -94,28 +91,29 @@
   background-color: $white;
 
   &::after {
-        content: "";
-        position: absolute;
-        top: 27.5%;
-        right: 0;
-        width: 18.8%;
-        height: 3px;
-        margin-top: 2px;
-        background: #68b738;
-        z-index: -1;
-        width: 93.7vw;
-        left:0;
-      }
-
-
+    content: "";
+    position: absolute;
+    top: 27.5%;
+    right: 0;
+    height: 3px;
+    margin-top: 2px;
+    background: #68b738;
+    z-index: -1;
+    width: 100vw;
+    left: 0;
+  }
 
   &--contact {
     margin-right: 79px;
     margin-bottom: 34px;
+    padding-left: 20px;
+    width: 200px;
 
     @media (min-width: 420px) {
+      padding-left: 20px;
       padding-right: 30px;
       margin-right: 0;
+      width: auto;
     }
 
     @media (min-width: $tablet-width) {
@@ -146,10 +144,10 @@
       padding: 0 40px;
 
       &::before {
-        width: 100vh;
-        left: -70px;
+        width: 100vw;
         z-index: -1;
         right: 0;
+        left: auto;
       }
 
       &::after {
@@ -159,10 +157,12 @@
   }
 
   &--comment {
-    padding-right: 22px;
+    padding: 0 22px;
+
     &::after {
       top: 55%;
     }
+
     @media (min-width: $tablet-width) {
       position: relative;
       padding: 0 40px 0 68px;
@@ -187,10 +187,10 @@
       padding: 0 40px;
 
       &::before {
-        width: 100vh;
-        left: -70px;
+        width: 100vw;
         z-index: -1;
         right: 0;
+        left: auto;
       }
 
       &::after {
@@ -200,15 +200,17 @@
   }
 
   &--extra {
-    padding-right: 23px;
+    padding: 0 23px;
 
     &::after {
-      top: 50%;
+      top: 43%;
     }
+
     @media (min-width: $tablet-width) {
       position: relative;
       padding: 0 43px 0 68px;
       margin-bottom: 56px;
+      top: 50%;
 
       &::before {
         content: "";
@@ -223,6 +225,7 @@
 
       &::after {
         width: 100vw;
+        top: 50%;
       }
     }
 
@@ -230,10 +233,10 @@
       padding: 0 40px;
 
       &::before {
-        width: 100vh;
-        left: -70px;
+        width: 100vw;
         z-index: -1;
         right: 0;
+        left: auto;
       }
 
       &::after {
@@ -253,13 +256,20 @@
   color: #222222;
   text-transform: uppercase;
   display: flex;
-  position: relative;
   align-items: center;
   position: relative;
   margin-bottom: 13px;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &--contact-email {
+    padding: 0 20px;
+  }
+
+  &--contact-tel {
+    padding: 0 20px;
   }
 
   &--extra {
@@ -320,6 +330,7 @@
       border: 1px solid #d1d1d1;
       border-radius: 50%;
       left: -1px;
+      top: 0;
     }
 
     &::after {
@@ -333,11 +344,12 @@
       border-radius: 50%;
       left: 9px;
       display: none;
+      top: 40%;
     }
 
     &:hover {
       &::before {
-        border: 1px solid  #bababa;
+        border: 1px solid #bababa;
       }
     }
 
@@ -357,13 +369,15 @@
         width: 40px;
         height: 40px;
         left: -17px;
-    }
+        top: -7px;
+      }
 
-    &::after {
-      width: 18px;
-      height: 18px;
-      left: -6px;
-    }
+      &::after {
+        width: 18px;
+        height: 18px;
+        left: -6px;
+        top: 20%;
+      }
       padding-left: 42px;
     }
 
@@ -399,7 +413,7 @@
   display: block;
 }
 
-.form__radio:checked~.form__label--radio::after {
+.form__radio:checked ~ .form__label--radio::after {
   display: block;
 }
 
@@ -407,7 +421,7 @@
   display: block;
 }
 
-.form__checkbox:checked~.form__label--extra::after {
+.form__checkbox:checked ~ .form__label--extra::after {
   display: block;
 }
 
@@ -416,6 +430,7 @@
 
   &--extra {
     margin-top: 30px;
+    padding: 0 20px;
 
     @media (min-width: $tablet-width) {
       display: flex;
@@ -565,6 +580,10 @@
       margin-right: 19px;
       padding-left: 2px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 7px;
+    }
   }
 
   &--tel {
@@ -572,6 +591,10 @@
 
     @media (min-width: $tablet-width) {
       margin-right: 15px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 7px;
     }
   }
 
@@ -597,7 +620,7 @@
     @include fontStyle(20px,30px,#444444);
     width: 630px;
     min-height: 173px;
-    margin: 76px 70px 0 71px;
+    margin: 76px 67px 0 71px;
     padding: 9px 0 0 17px;
     text-align: inherit;
   }
@@ -679,6 +702,12 @@
 }
 
 .form__wrapper-textarea {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
   @media (min-width: $desktop-width) {
     padding: 0 40px;
   }
@@ -686,10 +715,10 @@
 
 .form__icon {
   position: absolute;
-  right: 16px;
+  right: 36px;
 
   &--phone {
-    right: 13px;
+    right: 33px;
 
     @media (min-width: $tablet-width) {
       right: 83px;
@@ -711,12 +740,12 @@
   }
 }
 
-.form__input:active~.form__icon,
-.form__input:focus~.form__icon {
+.form__input:active ~ .form__icon,
+.form__input:focus ~ .form__icon {
   fill: #68b738;
 }
 
-.form__input:invalid:active~.form__icon,
-.form__input:invalid:focus~.form__icon {
+.form__input:invalid:active ~ .form__icon,
+.form__input:invalid:focus ~ .form__icon {
   fill: #ff8282;
 }

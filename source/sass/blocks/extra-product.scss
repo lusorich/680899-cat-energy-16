@@ -110,9 +110,11 @@
 
       @media (min-width: 1440px) {
         display: block;
-        width: 17.5%;
+        width: 100vw;
+        z-index: -1;
         top: 50%;
-        left: -71px;
+        right: 0;
+        left: auto;
       }
     }
   }

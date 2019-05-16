@@ -44,7 +44,6 @@
 }
 
 .product-card__line {
-
   @media (min-width: $tablet-width) {
     width: 100%;
     border-bottom: 1px solid #cdcdcd;
@@ -112,7 +111,7 @@
   }
 
   @media (min-width: $desktop-width) {
-   padding: 19px 20px 19px;
+    padding: 19px 20px 19px;
   }
 }
 

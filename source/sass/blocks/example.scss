@@ -179,6 +179,7 @@
 
 .example__wrapper {
   width: 100%;
+
   @media (min-width: $desktop-width) {
     display: flex;
     margin-top: 74px;
@@ -188,7 +189,7 @@
   }
 
   @media (min-width: 1440px) {
-    background: linear-gradient(to right,#f2f2f2 72.6%,#eaeaea 27.2%);
+    background: linear-gradient(to right, #f2f2f2 72.6%, #eaeaea 27.2%);
   }
 }
 
@@ -244,7 +245,6 @@
 
 .example__img-wrapper picture {
   display: flex;
-
 }
 
 .example__img {
@@ -374,7 +374,7 @@
     background: #ffffff;
     cursor: pointer;
     transform: translate(-50%, -50%);
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
 
     &::after {
       content: "";
@@ -392,12 +392,12 @@
     }
 
     &:hover {
-      box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
     }
 
     &:active {
       border: 2px solid #68b738;
-      box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
     }
   }
 }

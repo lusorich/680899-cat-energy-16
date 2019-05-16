@@ -13,7 +13,6 @@
 }
 
 .main-nav__logo-img {
-
   @media (min-width: $tablet-width) {
     width: 173px;
     height: 58px;
@@ -104,7 +103,6 @@
   &:active {
     opacity: 0.3;
   }
-
 }
 
 .main-nav__list li {
@@ -143,8 +141,7 @@
   }
 }
 
-.main-nav--opened .main-nav__toggle
- {
+.main-nav--opened .main-nav__toggle {
   cursor: pointer;
   position: absolute;
   top: 22px;
