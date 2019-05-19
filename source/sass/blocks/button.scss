@@ -48,7 +48,7 @@
 
 .button--link-grey {
   @include fontStyle(16px,20px,#444444);
-    background-color: $grey;
+  background-color: $grey;
 
   &:hover {
     background-color: #ebebeb;
