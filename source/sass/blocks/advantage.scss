@@ -7,14 +7,14 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    margin: 70px 30px 0;
-    padding-bottom: 50px;
+    margin: 70px 0 0;
     border-bottom: 1px solid #f2f2f2;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 70px 40px 0 40px;
+    margin: 0;
     border: none;
+    padding-bottom: 0;
   }
 }
 
@@ -124,24 +124,12 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    &:nth-child(1) {
-      margin-top: 0;
-    }
-  }
-
-  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
-    &:nth-child(2n) {
-      padding: 0 0 50px 30px;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     width: 50%;
     flex-direction: column;
     position: relative;
+    margin: 0 0 88px;
+    padding: 0 30px 44px;
 
     &--1 {
       &::before {
@@ -154,38 +142,30 @@
         font-family: "Oswald", "Arial", sans-serif;
 
         @media (min-width: $desktop-width) {
-          right: 76px;
+          right: 56px;
         }
       }
     }
 
     &--2 {
-      @media (min-width: $desktop-width) {
-        padding-left: 20px;
-      }
-
       &::before {
         content: "2";
         position: absolute;
         top: 92px;
-        right: 78px;
+        right: 108px;
         font-size: 281px;
         color: #f2f2f2;
         font-family: "Oswald", "Arial", sans-serif;
 
         @media (min-width: $desktop-width) {
           right: 40px;
+          padding-left: 20px;
         }
       }
     }
 
     &--3 {
-      margin: 81px 0 0 0;
-
-      @media (min-width: $desktop-width) {
-        margin: 0;
-        padding-left: 40px;
-      }
+      margin: 0 0 57px;
 
       &::before {
         content: "3";
@@ -197,31 +177,27 @@
         font-family: "Oswald", "Arial", sans-serif;
 
         @media (min-width: $desktop-width) {
-          right: 18px;
+          right: 37px;
+          padding-left: 40px;
         }
       }
     }
 
     &--4 {
-      margin: 81px 0 0 0;
-
-      @media (min-width: $desktop-width) {
-        margin: 0;
-        padding-left: 60px;
-      }
+      margin: 0 0 57px;
 
       &::before {
         content: "4";
         position: absolute;
         top: 92px;
-        right: 75px;
+        right: 105px;
         font-size: 281px;
         color: #f2f2f2;
         font-family: "Oswald", "Arial", sans-serif;
 
         @media (min-width: $desktop-width) {
           right: 0;
-          left: 172px;
+          left: 154px;
         }
       }
     }
@@ -229,6 +205,8 @@
 
   @media (min-width: $desktop-width) {
     width: 25%;
+    padding: 0 40px;
+    margin: 70px 0 72px;
   }
 }
 
@@ -245,7 +223,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 73px 40px 0 40px;
+    margin: 0 40px;
   }
 }
 
@@ -256,11 +234,17 @@
 
   @media (min-width: $tablet-width) {
     @include fontStyle(16px);
-    padding: 34px 90px 0 0;
+    padding: 34px 76px 0 0;
     z-index: 1;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 40px;
+    padding-right: 0;
+  }
+}
+
+.advantage__item--4 .advantage__desc {
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
   }
 }
