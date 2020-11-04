@@ -400,4 +400,12 @@
       box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
     }
   }
+
+  @media (min-width: $tablet-width) and (max-width: 1400px) {
+  	   left: 43.5%;
+  }
+
+  @media (min-width: 1400px) and (max-width: 3000px) {   
+       left: 45.5%;
+  }
 }
