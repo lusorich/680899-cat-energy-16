@@ -401,11 +401,10 @@
     }
   }
 
-  @media (min-width: $tablet-width) and (max-width: 1400px) {
-  	   left: 43.5%;
-  }
-
-  @media (min-width: 1400px) and (max-width: 3000px) {   
+  @media (min-width: 1400px) and (max-width: 2000px) {   
        left: 45.5%;
+  }
+    @media (min-width: 2000px) and (max-width: 3000px) {   
+       left: 48.5%;
   }
 }
